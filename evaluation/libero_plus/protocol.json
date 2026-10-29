@@ -1,0 +1,91 @@
+{
+  "benchmark": "LIBERO-plus",
+  "upstream_commit": "4976dc30028e805ff8094b55501d532c48fec182",
+  "checkpoint": "/mnt/vepfs01/output/tiecheng.guo/artifacts/waw/openwam_libero_mutual_robot_rgb_32gpu_20261025/runs/libero-mutual-robot-rgb-32gpu-fix-20261026/artifacts/2026-10-26_02-40-31/checkpoint_step_10690.safetensors",
+  "checkpoint_sha256": null,
+  "task_count": 10030,
+  "trials_per_task": 1,
+  "seed": 10000,
+  "rng_mode": "official_global; seeded before benchmark import and environment construction; no env.seed",
+  "model_eval_seed": 10000,
+  "settle_steps": 30,
+  "settle_action": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    -1
+  ],
+  "max_steps_by_suite": {
+    "libero_spatial": 600,
+    "libero_object": 600,
+    "libero_goal": 600,
+    "libero_10": 700
+  },
+  "denoise_steps": 10,
+  "inference_horizon": 10,
+  "inference_mode": "sync",
+  "compile": false,
+  "dit_approximate_cache": false,
+  "v2_physically_pruned_after_strict_checkpoint_load": true,
+  "renderer": "CPU OSMesa llvmpipe; shared standard runtime library",
+  "camera_height": 256,
+  "camera_width": 256,
+  "image_transform": "rotate_180",
+  "language": "exact perturbed task.language; full prompt cache key",
+  "action": "native EEF10 to LIBERO OSC7; same adapter as standard",
+  "model_replicas": 16,
+  "gpus": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "environments_per_model": 20,
+  "environment_workers": 320,
+  "prerequisite": "User directly authorized Plus after completed32GPU training; actual_node_exit_codes=[0,0,0,0]",
+  "source_sha256": "/mnt/vepfs01/output/tiecheng.guo/artifacts/waw/openwam_libero_mutual_robot_rgb_32gpu_20261025/runs/libero-mutual-robot-rgb-32gpu-fix-20261026/libero_plus_evaluation/source_sha256.json",
+  "assets_sha256": "96764a4bfbdaea98d4411598caeab235458318fe0f549611b93d1a323027b3cf",
+  "summary_metrics": [
+    "micro overall success rate",
+    "macro mean of seven category success rates",
+    "suite/category/difficulty breakdowns",
+    "service and roundtrip latency",
+    "wall duration"
+  ],
+  "created_unix": 1793016935.96549,
+  "difficulty_unlabeled_tasks": 121,
+  "difficulty_unlabeled_policy": "Retain and evaluate all121; separate unlabeled stratum in difficulty breakdown, include in overall/category/suite metrics",
+  "text_encoder": "Live frozen native T5, exact perturbed full prompt; training40-prompt diskcache disabled; bounded prompt LRU allowed",
+  "protocol_name": "libero_plus_official_tasks_openwam_author_runner",
+  "protocol_reference": "https://github.com/OpenWAM-Official/OpenWAM/tree/main/benchmarks/libero-plus",
+  "benchmark_reference": "https://github.com/sylvestf/LIBERO-plus#-evaluation",
+  "protocol_review": "official_protocol_audit.json",
+  "reset": "Upstream default hard reset; fresh process and environment per variant; first provided initial state",
+  "comparability": "10030 official variants and one trial match upstream. seed10000/settle30/600,600,600,700 are OpenWAM author settings, not universal LIBERO-Plus requirements. Other model runners use different seeds, settle and limits; no claim of bit-identical reproduction or fair ranking without protocol alignment.",
+  "infrastructure_failures": "Do not count as task failures; preserve error and retry the same task, completed normal failures are not retried",
+  "reviewed_unix": 1792777289.744201,
+  "mutual_topology": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      2
+    ]
+  ],
+  "training_run": "/mnt/vepfs01/output/tiecheng.guo/artifacts/waw/openwam_libero_mutual_robot_rgb_32gpu_20261025/runs/libero-mutual-robot-rgb-32gpu-fix-20261026",
+  "training_v2": "robot RGB external+wrist",
+  "deployment_adapter": "Exact training RoutedMutualMoTDriver; full strict load then V2 physical prune"
+}

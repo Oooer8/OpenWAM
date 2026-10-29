@@ -1,0 +1,13 @@
+defaults:
+  - cosmos3_droid
+  - _self_
+
+# Cosmos3 camera order/area ratios, adapted to the existing OpenWAM canvas.
+# Sizes W x H: canvas 320x384; wrist 320x256; exterior tiles 160x128.
+# This preserves the verified model input size, not native 16:9 camera aspect.
+view_layout: cosmos3_three_view
+head_camera_choices: null
+camera_layout:
+  - observation.image.wrist_image_left
+  - observation.image.exterior_image_1_left
+  - observation.image.exterior_image_2_left

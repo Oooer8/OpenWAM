@@ -1,0 +1,11 @@
+defaults:
+  - train_libero_alpha
+  - _self_
+
+dataloader:
+  type: libero_cached
+  libero_latent_cache_dir: ${oc.env:OPENWAM_LIBERO_CACHE_DIR,/mnt/vepfs01/output/tiecheng.guo/artifacts/waw/libero_4suite_vae_cache_native_train_v2}
+
+project:
+  wandb:
+    run_name: openwam_libero_alpha_cached

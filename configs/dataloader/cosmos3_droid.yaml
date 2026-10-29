@@ -1,0 +1,22 @@
+type: cosmos3_droid
+dataset_dir: /mnt/vepfs02/datasets/frontier_tech/Cosmos3-DROID/success
+prepared_dir: /mnt/vepfs01/output/tiecheng.guo/openwam/work/cosmos3_droid_prepared
+action_mode: eef
+normalize_mode: min-max
+num_frames: 33
+video_stride: 4
+window_stride: 1
+height: 384
+width: 320
+multiview: true
+head_camera_choices:
+  - observation.image.exterior_image_1_left
+  - observation.image.exterior_image_2_left
+unify_action: true
+unify_action_map: ["0-9"]
+color_jitter:
+  enabled: true
+  brightness: 0.2
+  contrast: 0.2
+  saturation: 0.2
+  hue: 0.0

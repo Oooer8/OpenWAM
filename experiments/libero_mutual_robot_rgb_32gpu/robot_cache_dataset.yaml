@@ -1,0 +1,31 @@
+type: libero
+dataset_dir: /mnt/vepfs01/output/tiecheng.guo/artifacts/waw/libero_openwam_native_eef10/libero_4suite
+action_mode: eef
+unify_action: true
+unify_action_map:
+- 0-9
+unify_state_map: null
+num_frames: 33
+video_stride: 4
+window_stride: 1
+split: train
+height: 384
+width: 320
+multiview: true
+camera_layout:
+- observation.images.robot_rgb
+- observation.images.wrist_robot_rgb
+- null
+target_camera: observation.images.robot_rgb
+normalize_mode: min-max
+color_jitter:
+  enabled: false
+  brightness: 0.2
+  contrast: 0.2
+  saturation: 0.2
+  hue: 0.0
+seed: 42
+head_camera_priority:
+- observation.images.robot_rgb
+wrist_camera_priority:
+- observation.images.wrist_robot_rgb

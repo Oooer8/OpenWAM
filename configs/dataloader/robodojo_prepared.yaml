@@ -1,0 +1,31 @@
+type: robodojo_prepared
+dataset_dir: /mnt/vepfs02/output/tiecheng.guo/RoboDojo_ee_lerobot_v30_video
+embodiment: arx_x5
+variant: sim
+action_mode: eef
+unify_action: true
+unify_action_map:
+- 0-9
+- 34-43
+unify_state_map: null
+num_frames: 33
+video_stride: 4
+window_stride: 1
+split: train
+height: 384
+width: 320
+multiview: true
+camera_layout:
+- cam_head
+- cam_left_wrist
+- cam_right_wrist
+target_camera: cam_head
+normalize_mode: min-max
+color_jitter:
+  enabled: true
+  brightness: 0.2
+  contrast: 0.2
+  saturation: 0.2
+  hue: 0.0
+seed: 42
+prepared_dir: /mnt/vepfs01/output/tiecheng.guo/RoboDojo_openwam_prepared_v1

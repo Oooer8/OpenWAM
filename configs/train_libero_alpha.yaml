@@ -1,0 +1,74 @@
+# OpenWAM-Official/OpenWAM: LIBERO alpha SFT (paper Appendix B, Tables 9-10).
+# Paper target: global batch 256, 10 epochs; 10,690 steps is a reference
+# for the official dataset, not a forced stop for another dataset revision.
+# The default is the prepared single bucket merging Spatial/Object/Goal/Long.
+# Source videos/timestamps remain at their original 20 FPS; the official
+# OpenWAM dataset release is 10 FPS. This is format-compatible preprocessing,
+# not a claim of byte-identical or timeline-identical official training data.
+defaults:
+  - train
+  - override dataloader: libero
+  - _self_
+
+dataloader:
+  # Supply a converted/official OpenWAM bucket, not the source suite parent.
+  dataset_dir: ${oc.env:OPENWAM_LIBERO_DATA_DIR,/mnt/vepfs01/output/tiecheng.guo/artifacts/waw/libero_openwam_native_eef10/libero_4suite}
+  action_mode: eef
+  unify_action: true
+  unify_action_map: ["0-9"]
+  num_frames: 33
+  video_stride: 4
+  window_stride: 1
+  split: train
+  height: 384
+  width: 320
+  multiview: true
+  camera_layout: [observation.images.image, observation.images.wrist_image, null]
+  normalize_mode: min-max
+  color_jitter:
+    enabled: false
+
+model:
+  architecture:
+    framework: dual_system
+    variant: joint_self_attn
+    attention_mask_mode: mutual
+    video_attention_mask_mode: first_frame_causal
+    action_dim: 80
+    state_dim: 80
+    use_proprioception: true
+    mot_checkpoint_mixed_attn: true
+
+training:
+  debug: false
+  finetune_ckpt_path: ${oc.env:OPENWAM_FOUNDATION_CKPT,/mnt/vepfs01/output/tiecheng.guo/openwam/assets/openwam_ckpt/openwam_alpha/OpenWAM-Alpha-Pretrain-Foundation-Model/checkpoint_step_154000.safetensors}
+  resume_ckpt_path: null
+  learning_rate: 1e-4
+  adam_betas: [0.9, 0.95]
+  weight_decay: 0.01
+  max_grad_norm: 1.0
+  num_epochs: 10
+  max_steps: null
+  # Assumes 8 processes: 8 GPUs * 4 micro-batch * 8 accumulation = 256.
+  # Recalculate accumulation if world size or micro-batch changes.
+  batch_size: 4
+  gradient_accumulation_steps: 8
+  lr_scheduler: cosine
+  warmup_ratio: 0.05
+  lr_min_ratio: 0.01
+  mixed_precision: bf16
+  zero_stage: 2
+  use_gradient_checkpointing: true
+  use_gradient_checkpointing_offload: false
+  offload_optimizer_device: none
+  lambda_video: 1.0
+  lambda_action: 1.0
+  # Trainer save_steps counts micro-steps: 16,000 / 8 = 2,000 updates.
+  save_steps: 16000
+  output_path: ${oc.env:OPENWAM_LIBERO_RUN_DIR,/mnt/vepfs01/output/tiecheng.guo/artifacts/waw/openwam_libero_alpha}
+  dataset_num_workers: 4
+
+project:
+  seed: 42
+  wandb:
+    run_name: openwam_libero_alpha

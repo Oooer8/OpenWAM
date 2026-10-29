@@ -1,0 +1,10 @@
+defaults:
+  - train_cosmos3_droid
+  - _self_
+
+training:
+  use_gradient_checkpointing: false
+
+model:
+  architecture:
+    mot_checkpoint_mixed_attn: false

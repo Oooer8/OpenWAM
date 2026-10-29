@@ -1,0 +1,2796 @@
+{
+  "source": "openwam_libero_mutual_robot_rgb_32gpu_20261025/source",
+  "upstream_commit": "1e103e1",
+  "files": [
+    {
+      "path": ".gitignore",
+      "size": 4418,
+      "sha256": "a1e7e47513ecd95de0cb0c2f9c61dbef216087d6514ac83771fb7490b13e146d"
+    },
+    {
+      "path": "LICENSE",
+      "size": 11351,
+      "sha256": "ac4ff0270f722d840125fa9d9e53f4c916d7a54adae913820518e6d277a7b167"
+    },
+    {
+      "path": "README.md",
+      "size": 1731,
+      "sha256": "4059a61e7be315412f14ca51d8b0cd20daf4171d907cbbea626201f249349266"
+    },
+    {
+      "path": "README.upstream.md",
+      "size": 18942,
+      "sha256": "a67b68a3f97432885c3f8cb5a3d908e5f4968a2cc62d447a8c598e7458a1fdd4"
+    },
+    {
+      "path": "configs/dataloader/cosmos3_droid.yaml",
+      "size": 549,
+      "sha256": "f6b92f23343411bbd16de1cd9d5192e45d7a7995ce59cc439064e1b871834588"
+    },
+    {
+      "path": "configs/dataloader/cosmos3_droid_threeview.yaml",
+      "size": 465,
+      "sha256": "0e273db6df3c97eb7026c2d4fd71ca117e9e16c556298a7996507831086af15c"
+    },
+    {
+      "path": "configs/dataloader/ebench.yaml",
+      "size": 982,
+      "sha256": "cd256809041781c229bd1d62419ac8968a4c6984da8883b710c97b6681878e08"
+    },
+    {
+      "path": "configs/dataloader/libero.yaml",
+      "size": 2897,
+      "sha256": "1ccf8143ccb5549c923479bb7e3815a14b235ee4fee81f4a92e622f1fd53a26a"
+    },
+    {
+      "path": "configs/dataloader/pretrain_data/agibotworld.yaml",
+      "size": 2825,
+      "sha256": "d8d736aa4eb5caae7ccc07ec1a45e6737d3f99a0f2051001138e03dd540d324d"
+    },
+    {
+      "path": "configs/dataloader/pretrain_data/interndata_a1.yaml",
+      "size": 2494,
+      "sha256": "cde04066a0957e6cad41df1c0aa40a06d41befa9a694816ff4e41bd201ceed9c"
+    },
+    {
+      "path": "configs/dataloader/pretrain_data/mixture.yaml",
+      "size": 1166,
+      "sha256": "030d89c9c4755bad713235df020fe96d0e3748cca0bfe1f97d4401e7bb3218fa"
+    },
+    {
+      "path": "configs/dataloader/pretrain_data/muka_franka.yaml",
+      "size": 1012,
+      "sha256": "f6a0cacb9195aab2e20e7c32d32c94db7f3a3130b3eb7a827647a22fbed07c86"
+    },
+    {
+      "path": "configs/dataloader/pretrain_data/oxe_droid.yaml",
+      "size": 1998,
+      "sha256": "5c9553f05d853093fa7e4580fcf98a83092f20bfaeffe948a38e85a0ddafda03"
+    },
+    {
+      "path": "configs/dataloader/pretrain_data/robocoin.yaml",
+      "size": 2754,
+      "sha256": "d1215aacba5789cf817f5a14814379a6ef00f7f2f4beabdfc957ea223e97d248"
+    },
+    {
+      "path": "configs/dataloader/robocasa365.yaml",
+      "size": 3341,
+      "sha256": "907ce541de412a84d10c899f71e354d72b3a2a2483486a2a8ee97c5e0bafe827"
+    },
+    {
+      "path": "configs/dataloader/robocasa_gr1.yaml",
+      "size": 3494,
+      "sha256": "db98df28b91d0db98e6249b42118fb3d76d729824fbe97263410230106821621"
+    },
+    {
+      "path": "configs/dataloader/robodojo.yaml",
+      "size": 2812,
+      "sha256": "9e0d5bbafb6dd4350d8d96b60e1ec7340b51b498d7f1a0059d37b2788a803e49"
+    },
+    {
+      "path": "configs/dataloader/robodojo_prepared.yaml",
+      "size": 609,
+      "sha256": "1987a99d8bbf7ed7d8e0de4606f3aee81f74b91683323ac4b4d8a93ec6adc076"
+    },
+    {
+      "path": "configs/dataloader/robotwin.yaml",
+      "size": 3650,
+      "sha256": "3777b2a757816737ae1cb9f9649ba8760a2f5e77e8558b5ad17247094e7d0d30"
+    },
+    {
+      "path": "configs/dataloader/vlabench.yaml",
+      "size": 4235,
+      "sha256": "37aa701c17078ca30cc5fb071d5102a732090a94d25e957a68268c6046660b6c"
+    },
+    {
+      "path": "configs/deploy.yaml",
+      "size": 2420,
+      "sha256": "a26d2087f02950f3d21f7af629cbf5a421d759359bab9b70962c8650e1235246"
+    },
+    {
+      "path": "configs/libero_cache_data.yaml",
+      "size": 439,
+      "sha256": "de913eb0f4729a64b390adc40483ed45d8ca24861e17f8f089bd15a1e10c8a5a"
+    },
+    {
+      "path": "configs/model/action_backbone/separate_action_dit.yaml",
+      "size": 604,
+      "sha256": "ebbe37aca73ffa4f883d0eb9adb147e28654dbb8cdd5b391a009457b46458fb6"
+    },
+    {
+      "path": "configs/model/action_backbone/shared_action_backbone.yaml",
+      "size": 313,
+      "sha256": "a31a9daad35447121a155dc08bf0f949b226ead65e6eaae95f7887f5678d448c"
+    },
+    {
+      "path": "configs/model/dual_system.yaml",
+      "size": 1981,
+      "sha256": "4a7d1c1bfd64add6e2b99451185e3374aa482b2867812668605450983f275735"
+    },
+    {
+      "path": "configs/model/single_system.yaml",
+      "size": 1537,
+      "sha256": "2f361cfa3a8cda7f07aa54476358c04f30c555c6c4ed1d743a5d1fa9a6f84759"
+    },
+    {
+      "path": "configs/model/tri_system.yaml",
+      "size": 2257,
+      "sha256": "56a28f682f459f84658e9e74ef73f41f31fbcf0f840f4791f9e53843fb37b618"
+    },
+    {
+      "path": "configs/model/video_backbone/cosmos3_edge.yaml",
+      "size": 1686,
+      "sha256": "8d3d6a16d4c02a91d7a3dc257fe426dcc994576eb1d09131aa7a7657ff0fa52c"
+    },
+    {
+      "path": "configs/model/video_backbone/cosmos_predict25_2b.yaml",
+      "size": 1632,
+      "sha256": "ca6d51d6890380a5ccc3cfe1e3e988fa7467a093a4e7d194619a9a5208f3350f"
+    },
+    {
+      "path": "configs/model/video_backbone/encoder/dinov3.yaml",
+      "size": 940,
+      "sha256": "0c87e38539f7c65b9e57528de08243f6a144dd7309026b44874553f75e6231e6"
+    },
+    {
+      "path": "configs/model/video_backbone/encoder/flux2_vae.yaml",
+      "size": 541,
+      "sha256": "df3080eb5a1678a3e10fdba4703b4454b287542268cd756dac897ec2777dd29b"
+    },
+    {
+      "path": "configs/model/video_backbone/encoder/svae/collect.yaml",
+      "size": 430,
+      "sha256": "ae27e340afd6cbb746fa696078d604d790d010194cdcd3c05cd9e69d05f2a9fd"
+    },
+    {
+      "path": "configs/model/video_backbone/encoder/svae/train.yaml",
+      "size": 1567,
+      "sha256": "be206ea1fd5d1d758efb12dd3c1c82fcb86586db611ecb5d297048e1251f3e5f"
+    },
+    {
+      "path": "configs/model/video_backbone/encoder/vjepa21.yaml",
+      "size": 992,
+      "sha256": "a611e2683d2f000a91dd20e6e8b6710b060993979c37342e898966541f15672e"
+    },
+    {
+      "path": "configs/model/video_backbone/encoder/wan22_vae.yaml",
+      "size": 207,
+      "sha256": "3dbf768398a371e60cd52e884893141808ea4ed04f21df219642e0bb3ee53cf2"
+    },
+    {
+      "path": "configs/model/video_backbone/wan21_i2v_14b_480p.yaml",
+      "size": 376,
+      "sha256": "c17760c878d3b8caf0d1ddce723d39a040404c4ae68de34af11b667c93d9ed8f"
+    },
+    {
+      "path": "configs/model/video_backbone/wan21_vace_1_3b.yaml",
+      "size": 365,
+      "sha256": "7ff5063b77c053814ac72ca1f8dc76ce8fcc2924140e9b743898f141f861fbb6"
+    },
+    {
+      "path": "configs/model/video_backbone/wan22_ti2v_5b.yaml",
+      "size": 546,
+      "sha256": "0768b2cf5f580796d36460880ef8054b2c7ce3cc5bcd293815f898bd825df9b6"
+    },
+    {
+      "path": "configs/model/vlm_backbone/qwen3_vl_2b.yaml",
+      "size": 371,
+      "sha256": "c5803325d5051535940295622acad74ce9555fd550aed1f473d36156441d54ee"
+    },
+    {
+      "path": "configs/train.yaml",
+      "size": 3720,
+      "sha256": "751c5acdbef3925c7cccc972da405c14baabac088391c8ddaa9b3ffd0ad63f02"
+    },
+    {
+      "path": "configs/train_cosmos3_droid.yaml",
+      "size": 858,
+      "sha256": "bfb7a2164c928dbf0e39dc043d24017dbb3a34ef9aaadb85f7b723520f34feb2"
+    },
+    {
+      "path": "configs/train_cosmos3_droid_fast.yaml",
+      "size": 153,
+      "sha256": "050ecaff8957dd0676bcd27ee41f23a9fd23d14f01b531fc388ddfaa284726a4"
+    },
+    {
+      "path": "configs/train_libero_alpha.yaml",
+      "size": 2539,
+      "sha256": "9a50e113d681d75f768affe4189593408b60db0d0350c1142304c98638b5e5d9"
+    },
+    {
+      "path": "configs/train_libero_alpha_cached.yaml",
+      "size": 289,
+      "sha256": "db3e790304b0f9f050008d7ac24d4732cc9149058c31314e14810504ca57bc45"
+    },
+    {
+      "path": "configs/train_robodojo_cached.yaml",
+      "size": 443,
+      "sha256": "411d3e5342fa8f0914e27ebda9191982e6e76c950635cc5704d85cc2fc718d11"
+    },
+    {
+      "path": "configs/train_robodojo_cached_swanlab.yaml",
+      "size": 298,
+      "sha256": "95aed0298c7745c518002d2037a4485bc697ac0c8634a48c2d1009f1aa4104e1"
+    },
+    {
+      "path": "configs/train_robodojo_prepared.yaml",
+      "size": 1470,
+      "sha256": "9edde6fae84d1ef0179be69849cde365c398584527250c1079fe143569695e40"
+    },
+    {
+      "path": "evaluation/libero_plus/common.py",
+      "size": 2559,
+      "sha256": "4b81d9637b6c2d37395a09cbb039272b40443aeac01d2d714b386f6463f0df8e"
+    },
+    {
+      "path": "evaluation/libero_plus/model_server.py",
+      "size": 4134,
+      "sha256": "a9efe5dddcd578e26e650e4f5173ad6d0951c9967677d47f676ff5d470015148"
+    },
+    {
+      "path": "evaluation/libero_plus/policy_config.yml",
+      "size": 1053,
+      "sha256": "ff49e43a05e1f8dd321d9285cc4bcb20ef5e324dbe3b9cfb2a2d74ba93d486ec"
+    },
+    {
+      "path": "evaluation/libero_plus/protocol.json",
+      "size": 3767,
+      "sha256": "e364d26cf212989059e4343eaaf56bc70748996194c05dbdfec0b49cb6cb1134"
+    },
+    {
+      "path": "evaluation/libero_plus/supervise_plus.py",
+      "size": 14998,
+      "sha256": "9d969e2ac5161e4ab124518057cd836ea3ab34247d7b028d5710098c8d81bc7f"
+    },
+    {
+      "path": "experiments/libero_mutual_robot_rgb_32gpu/audit_rgb_inputs.py",
+      "size": 2514,
+      "sha256": "7b8c300d6ac8e3da24ff44777f6359e275ec700437b05496e7f56765d9369335"
+    },
+    {
+      "path": "experiments/libero_mutual_robot_rgb_32gpu/cache_reference_config.yaml",
+      "size": 5777,
+      "sha256": "898134f04ceed4fd94875624bffb1777784844cfb5eb823cbdb6090c7ad9e112"
+    },
+    {
+      "path": "experiments/libero_mutual_robot_rgb_32gpu/cache_stage.py",
+      "size": 5255,
+      "sha256": "e1f64ac6eb1b5153b2c3807423069fb84c2c7ba39acc667261339f94acc1e086"
+    },
+    {
+      "path": "experiments/libero_mutual_robot_rgb_32gpu/check_paired_cache_grouping.py",
+      "size": 2635,
+      "sha256": "06a75fde78320d8ca9cb4ec42bc8a4f0f9a077523d964c49b2ae8d4dae7d8b77"
+    },
+    {
+      "path": "experiments/libero_mutual_robot_rgb_32gpu/config.yaml",
+      "size": 6182,
+      "sha256": "dd8385280b4c1a9257c71d29ee7259c1d02d57148a9040c0b050b197d4afa411"
+    },
+    {
+      "path": "experiments/libero_mutual_robot_rgb_32gpu/gradient_capture.py",
+      "size": 1734,
+      "sha256": "ccefaa6cf48aeb4d516564ad32695232133e61ba902ec011b3d9cd48e9867fd7"
+    },
+    {
+      "path": "experiments/libero_mutual_robot_rgb_32gpu/launch.py",
+      "size": 15779,
+      "sha256": "64db15a7c7a35bdbc2e6f5750d889d8af773267a0f22578d0d5328dee023d9d3"
+    },
+    {
+      "path": "experiments/libero_mutual_robot_rgb_32gpu/launch.sh",
+      "size": 942,
+      "sha256": "9d31093121019f3475747ed973b1699599d7323df811d5bbd395e4e81be1c511"
+    },
+    {
+      "path": "experiments/libero_mutual_robot_rgb_32gpu/launch_public.sh",
+      "size": 158,
+      "sha256": "7bf3626ca1eedaf686a44971bc8489c15fb9536a04608120ae99e7e276d1152b"
+    },
+    {
+      "path": "experiments/libero_mutual_robot_rgb_32gpu/parameter_sampling.py",
+      "size": 800,
+      "sha256": "d288edd0f41b3bdf563740b849cadcb3d383dd7c5db6357d72d9b61e3cbc9740"
+    },
+    {
+      "path": "experiments/libero_mutual_robot_rgb_32gpu/robot_cache_dataset.yaml",
+      "size": 671,
+      "sha256": "1f04be2f95a4a162072d7c622b27b4f81b674ec34ce3b933dd3a509783d13709"
+    },
+    {
+      "path": "experiments/libero_mutual_robot_rgb_32gpu/runtime_common.py",
+      "size": 2410,
+      "sha256": "c07de15d8e8bf8d70eecc3cd84ece4e09b6b18626af9237aa93d0ad70d15ce96"
+    },
+    {
+      "path": "experiments/libero_mutual_robot_rgb_32gpu/tests/test_recipe.py",
+      "size": 4081,
+      "sha256": "8a51e50f3606a79b6236dcbda2eb8929da4affbe56ba4331e9c4153f73d618d7"
+    },
+    {
+      "path": "experiments/libero_mutual_robot_rgb_32gpu/train_worker.py",
+      "size": 5736,
+      "sha256": "90d7a85b70fab66429a9bc3cf1a8a68b2a5d22e2a534ac7614d5df49a9a83c07"
+    },
+    {
+      "path": "openwam/__init__.py",
+      "size": 269,
+      "sha256": "d3fa616d27e418da41c0f6433cf2b32282bf4af5fac4087284288b2a813b0c30"
+    },
+    {
+      "path": "openwam/dataloader/__init__.py",
+      "size": 940,
+      "sha256": "c40a12c38e5fc345531433ad63f539d097e81d82bdfc9a28c117a751200b1fed"
+    },
+    {
+      "path": "openwam/dataloader/agibotworld.py",
+      "size": 32775,
+      "sha256": "31bee03513f4c0aa3d533bef647c0c138549d22843f6c369b77bececae70c2c5"
+    },
+    {
+      "path": "openwam/dataloader/bases/__init__.py",
+      "size": 1106,
+      "sha256": "8b89c4147ce750bb27d9c2fc9be9353ff621a96d33c86f4e46f97023b1deb079"
+    },
+    {
+      "path": "openwam/dataloader/bases/dataset.py",
+      "size": 1943,
+      "sha256": "4ced498a32ea367852ea7ae6eeed7e738b07775f6020689066deb919d9d236d3"
+    },
+    {
+      "path": "openwam/dataloader/bases/lerobot_v3_reader.py",
+      "size": 60827,
+      "sha256": "7ce90e0e6ef335bfe9cfed559afa8b93971490a254e87057c0fbb05b598fefe6"
+    },
+    {
+      "path": "openwam/dataloader/bases/multi_lerobot_v3_reader.py",
+      "size": 3821,
+      "sha256": "bf672bf28abbda9e8c93dcb519ff3fa8dd93c98980a6a9d6637749a403480351"
+    },
+    {
+      "path": "openwam/dataloader/cosmos3_droid.py",
+      "size": 9523,
+      "sha256": "d750e6f531e28018b2494d490a3aaf1bb3425ef0b5855db08eb14e23dacc3ede"
+    },
+    {
+      "path": "openwam/dataloader/ebench.py",
+      "size": 58050,
+      "sha256": "4d6b32bf0f14967954997b32d580747a6387a3cc86c14f2dfcb6fa50be0bdddd"
+    },
+    {
+      "path": "openwam/dataloader/interndata_a1.py",
+      "size": 71706,
+      "sha256": "decfcdfed164c5f31c10e4143fc23fdf3667e361af4c89d5184db5e0d0d1440b"
+    },
+    {
+      "path": "openwam/dataloader/libero.py",
+      "size": 14559,
+      "sha256": "19a5f0a0c394645e2fd5337cf6524413392f03f73b0e4c353e790780b0cf29f8"
+    },
+    {
+      "path": "openwam/dataloader/libero_latent_cache.py",
+      "size": 7814,
+      "sha256": "6a248c0d7d143aa8ad070630966c5d6b856d8b39a25e2461e1a597530418206a"
+    },
+    {
+      "path": "openwam/dataloader/libero_robot_rgb_pair.py",
+      "size": 2574,
+      "sha256": "234be40e5106d6ce4c8b6b3d4f70eefa762b64730eff478a55286133c9da85a7"
+    },
+    {
+      "path": "openwam/dataloader/mixture.py",
+      "size": 18121,
+      "sha256": "28c8f20f4c0d167960170b6a4c1b6c6a96202208145be33c3832ef03fc123f45"
+    },
+    {
+      "path": "openwam/dataloader/muka_franka.py",
+      "size": 13962,
+      "sha256": "42fbe46feb7af703e1e88767b5f390f5d5f6a05e4f7da07d4f882420c296872d"
+    },
+    {
+      "path": "openwam/dataloader/oxe_droid.py",
+      "size": 27167,
+      "sha256": "7e7d8c54574f9db717e31b0c22cb0e6622b88071fb1b23d00d883e0819881e66"
+    },
+    {
+      "path": "openwam/dataloader/registry.py",
+      "size": 4530,
+      "sha256": "75efd63dbd6cdd5d4a0883ef5d7eccb11907c2d066c1339300ba4ffcc3c5196f"
+    },
+    {
+      "path": "openwam/dataloader/robocasa365.py",
+      "size": 28638,
+      "sha256": "04c30b1943962130e48b100f2beea253566677df0525c20775c54e8defcbe34c"
+    },
+    {
+      "path": "openwam/dataloader/robocasa_gr1.py",
+      "size": 22099,
+      "sha256": "4e7e50c5ec68eb47fc361c9aad9ea5263be7eed1a72f5ce4655d4c6772abc1cd"
+    },
+    {
+      "path": "openwam/dataloader/robocoin.py",
+      "size": 59855,
+      "sha256": "908355c6a8a2890528e6f37255d91ad79174a7c717f94d8810f09d1dd7e832fc"
+    },
+    {
+      "path": "openwam/dataloader/robodojo.py",
+      "size": 50143,
+      "sha256": "be0ff12066ca62a76820bd6ed9e45c5419b7f6724af70416053971343e94c292"
+    },
+    {
+      "path": "openwam/dataloader/robodojo_contract.py",
+      "size": 13780,
+      "sha256": "193a221ed4f6a2ee13263d601e53ad6339d3f44e1d9df924175b1498fc0add63"
+    },
+    {
+      "path": "openwam/dataloader/robodojo_latent_cache.py",
+      "size": 3333,
+      "sha256": "fb54547a690981ef28e0e787eb7d8b1bb1638443885baa817700217e9f24e20d"
+    },
+    {
+      "path": "openwam/dataloader/robodojo_prepared.py",
+      "size": 9613,
+      "sha256": "f5f38de86d1ef77ad9f1885c3998d08191ebf7aabd0814b28f6716045ab5b84a"
+    },
+    {
+      "path": "openwam/dataloader/robotwin.py",
+      "size": 51808,
+      "sha256": "66e4bfd2d8092f7f1ed145ee2be101c12c7d81488965d81ae1438e7ee78b133c"
+    },
+    {
+      "path": "openwam/dataloader/transforms/__init__.py",
+      "size": 1075,
+      "sha256": "7777309c152ba7def4ad4e6ca5b0dc1c69aa1279d90d10a926b9e9e753020e5d"
+    },
+    {
+      "path": "openwam/dataloader/transforms/base.py",
+      "size": 2710,
+      "sha256": "79ceae34f73c7fe219c56dc686c547ae736d9fbdeb832941d964a25c36d7b071"
+    },
+    {
+      "path": "openwam/dataloader/transforms/builder.py",
+      "size": 4211,
+      "sha256": "8e2260c6b2712c7f2ffb5b3adac98001559a73fdc7a1a349efd9601ef190440a"
+    },
+    {
+      "path": "openwam/dataloader/transforms/multiview.py",
+      "size": 5730,
+      "sha256": "197bb6962a169f2c8c4f50574d262a9d2cbed95f3df8fff543f0b3195e18a4d5"
+    },
+    {
+      "path": "openwam/dataloader/transforms/normalize.py",
+      "size": 9612,
+      "sha256": "ea3b1443b8431e6c9a201bf2d49cfb7569ee3214853a971000e324207646c4d1"
+    },
+    {
+      "path": "openwam/dataloader/transforms/pipeline.py",
+      "size": 1656,
+      "sha256": "1ec3cf47dadeb57d04ef63858ef9ccc96e8397c773301ad4e6f3e26a663fac9a"
+    },
+    {
+      "path": "openwam/dataloader/transforms/rotation.py",
+      "size": 9082,
+      "sha256": "283cf759e50f2a5b10df5e7e1c76629f76d8717d84fc915a219e8b986b71ca4d"
+    },
+    {
+      "path": "openwam/dataloader/transforms/video.py",
+      "size": 7486,
+      "sha256": "8a2ced3f683675ee2a4cf4189bd79655b2d2bfc0ad42624419bb745c9d109d2d"
+    },
+    {
+      "path": "openwam/dataloader/utils/__init__.py",
+      "size": 1222,
+      "sha256": "aba6e7d1eedee2228c4c0c9669836665b56cf642b05ff527dca35d9c8af8fb67"
+    },
+    {
+      "path": "openwam/dataloader/utils/eef.py",
+      "size": 11723,
+      "sha256": "ad39fb97f0f4920d79c4f06bab609f2f6c702527af9952daab82556cf00ef010"
+    },
+    {
+      "path": "openwam/dataloader/utils/exclusion_io.py",
+      "size": 1635,
+      "sha256": "d8d11494c93864aeedd01e8ff4a168b303ec3f1731df97af7ec067d78e999b47"
+    },
+    {
+      "path": "openwam/dataloader/utils/gr1_kinematics.py",
+      "size": 14392,
+      "sha256": "862a013ae88f095d94fb5fb5c641a6b375999c111786cd64ec7a250dbd90e2d2"
+    },
+    {
+      "path": "openwam/dataloader/utils/lerobotv3.py",
+      "size": 35118,
+      "sha256": "ecb2aa439d2e6b6cbb2fe410ac39f441d991de43fe8286d2ad0baf40116ca2dc"
+    },
+    {
+      "path": "openwam/dataloader/utils/normalization.py",
+      "size": 12831,
+      "sha256": "7b6c6cfaf4d551ca8c0c5e35ddf6bf240b7337de8b3e428c59b405cf489a5762"
+    },
+    {
+      "path": "openwam/dataloader/utils/oxe_schema.py",
+      "size": 6160,
+      "sha256": "bea6cc803dd2945ffddc317f5ac4cf2e966c75f97b64c3555ad727f90cc27789"
+    },
+    {
+      "path": "openwam/dataloader/utils/poses.py",
+      "size": 13614,
+      "sha256": "1939133e6049394a2d0f243f81df9431763417f594832a54e4e5592c086a9d1c"
+    },
+    {
+      "path": "openwam/dataloader/utils/stats_computation/__init__.py",
+      "size": 315,
+      "sha256": "4205180de4258cc62d873fdb07e6e81e583689642ff2d9aa34e9ddc0f50fd902"
+    },
+    {
+      "path": "openwam/dataloader/utils/stats_computation/agibotworld_stats_computation.py",
+      "size": 14419,
+      "sha256": "f8ac5c28068330a91731931999455b6d88c1026f7b583dc15a1931f13ce9db7b"
+    },
+    {
+      "path": "openwam/dataloader/utils/stats_computation/ebench_stats_computation.py",
+      "size": 8870,
+      "sha256": "3b7cc6b4ae91462c4232882f8f54c1bc39cc2766892998797c40d7dbb842cf88"
+    },
+    {
+      "path": "openwam/dataloader/utils/stats_computation/interndata_a1_stats_computation.py",
+      "size": 26248,
+      "sha256": "ed7bf063ec57ca73e6bf1691f10b0b8260f7f7fdbd291cc74bce2c2343cc3ba6"
+    },
+    {
+      "path": "openwam/dataloader/utils/stats_computation/libero_stats_computation.py",
+      "size": 5512,
+      "sha256": "265c504c7f79dc4d4cf35b970989bb0d589b1bc029a6ac953128b7a2340c5dab"
+    },
+    {
+      "path": "openwam/dataloader/utils/stats_computation/muka_franka_stats_computation.py",
+      "size": 5767,
+      "sha256": "b0a5c4d07bf41e58b0dfb9e9e647c0b95843d5a9cafe2a05aef74ab94f6eb599"
+    },
+    {
+      "path": "openwam/dataloader/utils/stats_computation/oxe_stats_computation.py",
+      "size": 12697,
+      "sha256": "09c1d5bab92e07d1246d4cacd2e17a6891bf2199a39652381a665483f740c405"
+    },
+    {
+      "path": "openwam/dataloader/utils/stats_computation/robocasa365_stats_computation.py",
+      "size": 10945,
+      "sha256": "620fcf0a8012b631d48d5671d71775ac6902377ad029d924d73dc6ff5ad5249b"
+    },
+    {
+      "path": "openwam/dataloader/utils/stats_computation/robocasa_gr1_stats_computation.py",
+      "size": 8548,
+      "sha256": "bd3c8b7d14ae80534a972f8578e4073463df09e28221883e9e3c45eed982c88f"
+    },
+    {
+      "path": "openwam/dataloader/utils/stats_computation/robocoin_stats_computation.py",
+      "size": 22481,
+      "sha256": "c6ec85640f4885107fc7b0e1ff02f10248a173c4c2f2ab90d91c28710f7d3f6b"
+    },
+    {
+      "path": "openwam/dataloader/utils/stats_computation/robodojo_stats_computation.py",
+      "size": 11208,
+      "sha256": "3d8c7802e9a821259953af98dbc8da67173c31c77f87269b33ec3d8504c78bfc"
+    },
+    {
+      "path": "openwam/dataloader/utils/stats_computation/robotwin_stats_computation.py",
+      "size": 22111,
+      "sha256": "9bd378493de4da1741d8536606b40d624deb8eb0ea736a799737ce5fdd1b1d72"
+    },
+    {
+      "path": "openwam/dataloader/utils/stats_computation/vlabench_stats_computation.py",
+      "size": 7136,
+      "sha256": "a11d66c35cc57f64f9c3dcdc201c984ae14ad175a6d8e184c38fbf968eedbe66"
+    },
+    {
+      "path": "openwam/dataloader/utils/unify_action.py",
+      "size": 9932,
+      "sha256": "353ca60b6a7a69ef6b50f86e582ac4ec5a40b0ec22a35fe4272468f15581b441"
+    },
+    {
+      "path": "openwam/dataloader/utils/video_io.py",
+      "size": 5119,
+      "sha256": "68381684589832d56eaaca70dd772062e83ce50f5723df75936c9c17da99d182"
+    },
+    {
+      "path": "openwam/dataloader/vav_aligned_batch_sampler.py",
+      "size": 1788,
+      "sha256": "bab941ce2105fa5db254fd576d61229beff92107168edc5766a87ffa0d658a9b"
+    },
+    {
+      "path": "openwam/dataloader/vav_cache_consumer.py",
+      "size": 3156,
+      "sha256": "cd13f3ab8be71ca58708245df5af22275c5eb51ca5b3c5adf042962a2b8450cc"
+    },
+    {
+      "path": "openwam/dataloader/vlabench.py",
+      "size": 12286,
+      "sha256": "8517d970e8667652189206998d6bd3063a25119fe1892590b868f9f343a6626a"
+    },
+    {
+      "path": "openwam/deploy/__init__.py",
+      "size": 555,
+      "sha256": "10970afb2d5b25d59e676398b810a6db0ba2ffa84c4239bdc3707f871b60dee4"
+    },
+    {
+      "path": "openwam/deploy/denoise_schedule.py",
+      "size": 12915,
+      "sha256": "8ecd3c73bb78de767a3c669bea7a51fccfca6ffdaa726b49aab3663e96da5c30"
+    },
+    {
+      "path": "openwam/deploy/engine.py",
+      "size": 16820,
+      "sha256": "aa5b82d5fb0a52c3c84000a01f65e8d9148a2f14b3d1fe684e2182a98722a5fc"
+    },
+    {
+      "path": "openwam/deploy/executors/__init__.py",
+      "size": 910,
+      "sha256": "7de60d68f521df6ed1633df8c4f4ad59a9d6eaebf4ac9a2332e5194177fbd9c0"
+    },
+    {
+      "path": "openwam/deploy/executors/async_executor.py",
+      "size": 15228,
+      "sha256": "18eda62ba79e01043c9fddb60517dda548f300cd5cb9c03e38efd59712d0bd85"
+    },
+    {
+      "path": "openwam/deploy/executors/sync_executor.py",
+      "size": 2709,
+      "sha256": "0a170b7d1bd978fcab4a993893cb1fa1153b81343600f10ddd36a72afff1aed2"
+    },
+    {
+      "path": "openwam/deploy/model_loader.py",
+      "size": 27191,
+      "sha256": "c5009815d43fb67b45185bb96e3d0f2ef881341ee204d281983e97359b8b4e70"
+    },
+    {
+      "path": "openwam/deploy/obs_preprocess.py",
+      "size": 9559,
+      "sha256": "cc7189637029de6011084dcea0e4c3d77fbe18806664a5d8e242adc58a021ecf"
+    },
+    {
+      "path": "openwam/deploy/optimizations/__init__.py",
+      "size": 324,
+      "sha256": "f93581e7e836c5c4fa9e605eafaa4debfd172bccec2d784583803708ffdd95e6"
+    },
+    {
+      "path": "openwam/deploy/optimizations/dit_cache.py",
+      "size": 6563,
+      "sha256": "e96cd3016f7d0e321800caccd92d2bd31f1833072988d7f7c48b6c74ea45e9bb"
+    },
+    {
+      "path": "openwam/deploy/policy.py",
+      "size": 4254,
+      "sha256": "835b28e187a0bf835697ca7f50b8673e9f8b66d6de266dd45bbecc8853d9a36d"
+    },
+    {
+      "path": "openwam/deploy/server.py",
+      "size": 28266,
+      "sha256": "42b0d00530a464735cef545fd6439cf81d368ece893598de4bc087f2c9fb3a2a"
+    },
+    {
+      "path": "openwam/model/__init__.py",
+      "size": 1072,
+      "sha256": "06103e0c49bea0e3f6f027ac1fbd957cf97dc1938a6ca1122a89f913d78bb2da"
+    },
+    {
+      "path": "openwam/model/action_backbone/__init__.py",
+      "size": 1000,
+      "sha256": "add346e5cd14a657ea4c055075ed0e9ca8cb03253dd72a381fee0dfe1900401d"
+    },
+    {
+      "path": "openwam/model/action_backbone/base.py",
+      "size": 9811,
+      "sha256": "fab5829d25a64a4b743e41f7f194533af2069e1a0377ce3c68dd80bf76fc4d92"
+    },
+    {
+      "path": "openwam/model/action_backbone/components.py",
+      "size": 13586,
+      "sha256": "419a45c88d12dfa4e7a63a975a582dd7d67f67bc91a31a5658a0698e850e92c1"
+    },
+    {
+      "path": "openwam/model/action_backbone/scheduler.py",
+      "size": 5658,
+      "sha256": "a8c0b88d687a07e2b9aa22b29573831ae5b6b2a901aee42f334f08f435add75e"
+    },
+    {
+      "path": "openwam/model/action_backbone/separate_action_dit.py",
+      "size": 38141,
+      "sha256": "a62b6b6985cfedd5e45f0e7301a03880381698c51aecb2f88c28e48d0926a24f"
+    },
+    {
+      "path": "openwam/model/action_backbone/shared_action_backbone.py",
+      "size": 9828,
+      "sha256": "ccc49f3b1f7d2f239107b92cf9eeff45839808e575c3083c5467d5ca978374f8"
+    },
+    {
+      "path": "openwam/model/architectures/__init__.py",
+      "size": 1555,
+      "sha256": "ec47730eeaebf1c92ca47fa18decce6a2d45a06583ac7d04795088a8e6fcf181"
+    },
+    {
+      "path": "openwam/model/architectures/base.py",
+      "size": 85167,
+      "sha256": "444dd590403b860cc72f42ee21bdbdd6855d75fec89c6a4f01d3985b81e07c21"
+    },
+    {
+      "path": "openwam/model/architectures/dual_system/__init__.py",
+      "size": 946,
+      "sha256": "3422d92ec2da5a3ceb211566a0b12b55100da50efcae7e039f7879056208a776"
+    },
+    {
+      "path": "openwam/model/architectures/dual_system/idm.py",
+      "size": 56454,
+      "sha256": "4da8addc3797e5ef8977864c04cd1e3040edd72615db32e3fadd5e53a0a56823"
+    },
+    {
+      "path": "openwam/model/architectures/dual_system/joint_cross_attn.py",
+      "size": 11751,
+      "sha256": "be93a22617f9798eef0ef61273c7391519adf15da7719ac49df301987f6198a1"
+    },
+    {
+      "path": "openwam/model/architectures/dual_system/joint_self_attn.py",
+      "size": 11507,
+      "sha256": "9149b99df6f55cc8c09a787cb11a1b51e99e75ebc012fe44240ba385c59157c3"
+    },
+    {
+      "path": "openwam/model/architectures/dual_system/mot_driver.py",
+      "size": 18451,
+      "sha256": "100a428e2b19c05dfe28355994316ca865dc832493844cf5f6274947eda65c89"
+    },
+    {
+      "path": "openwam/model/architectures/dual_system/vav.py",
+      "size": 14351,
+      "sha256": "f3179bf61adcd46600831c3d31d6c4fe92ca58a932e9bd6d1eb47bf30b8e3781"
+    },
+    {
+      "path": "openwam/model/architectures/dual_system/vav_attention.py",
+      "size": 4241,
+      "sha256": "5760ade88e7daf23241ac8daddaadfa99e16e46529e91e302403cd53663e7767"
+    },
+    {
+      "path": "openwam/model/architectures/dual_system/vav_driver.py",
+      "size": 4549,
+      "sha256": "d6062581272a57790627b2f60f2e3250cf8d56017a15811c1c03be15d81de533"
+    },
+    {
+      "path": "openwam/model/architectures/registry.py",
+      "size": 9558,
+      "sha256": "71ced7ee651fc87dbe37959396903cd9cf353aa14840d03881d09f7b1acb3b1c"
+    },
+    {
+      "path": "openwam/model/architectures/single_system/__init__.py",
+      "size": 463,
+      "sha256": "fc896763c2fc86d78645245560d0ed3d462066bc83c4214563b474bb38f86431"
+    },
+    {
+      "path": "openwam/model/architectures/single_system/moe.py",
+      "size": 8028,
+      "sha256": "300fff96050d5162505e248632930fe2fd70ea350d770b52d76703ac7846a78e"
+    },
+    {
+      "path": "openwam/model/architectures/single_system/state.py",
+      "size": 3022,
+      "sha256": "e032a932f6567f57502d30ed5e546978d0bcc5b52f25203f982d884e10bfd987"
+    },
+    {
+      "path": "openwam/model/architectures/single_system/vanilla.py",
+      "size": 6537,
+      "sha256": "fe1e1140b99371046ba256c9868c7656eab1cf37c709896e728e9372fe83ec57"
+    },
+    {
+      "path": "openwam/model/architectures/tri_system/__init__.py",
+      "size": 334,
+      "sha256": "0da85a7da0251b67f1e68a464cb8945c2cdea39282ca7b8659b62b1ea95af5f2"
+    },
+    {
+      "path": "openwam/model/architectures/tri_system/joint_self_attn.py",
+      "size": 22396,
+      "sha256": "908c9fdb8fc3438730f8e1278fa16647a01a0aad42e47f6a065ef307c976dbd7"
+    },
+    {
+      "path": "openwam/model/architectures/tri_system/mot_driver.py",
+      "size": 19052,
+      "sha256": "5c47e4bfd94ce9c43729f5016d3752dd38075c7e30ee7c1443c1325a43ad83ed"
+    },
+    {
+      "path": "openwam/model/architectures/tri_system/und_expert.py",
+      "size": 7875,
+      "sha256": "8d61e6d3fb33c412d999783c49dfd6b5ec26e51a15643e6f61073bc2654aec56"
+    },
+    {
+      "path": "openwam/model/architectures/utils/__init__.py",
+      "size": 401,
+      "sha256": "d8e66543894289a70acf5c00a303f6f45c802c000e593a1e12596d66feaec419"
+    },
+    {
+      "path": "openwam/model/architectures/utils/checkpoint_scope.py",
+      "size": 404,
+      "sha256": "40a3f283927883e8f6d57a2d3d2e387d818d65bbfb023069d6afbb089831ca22"
+    },
+    {
+      "path": "openwam/model/architectures/utils/common.py",
+      "size": 5694,
+      "sha256": "a6019ba9ebe49c6ceca60553e548715f4d3a0946e2af7445d14c5c614b7fc4a3"
+    },
+    {
+      "path": "openwam/model/architectures/utils/mask_modes.py",
+      "size": 7070,
+      "sha256": "3a23815ee94719132ca9b173bc2cbe6fda62575b1b95eb6f8e350c2a6236a787"
+    },
+    {
+      "path": "openwam/model/architectures/utils/selective_checkpoint.py",
+      "size": 722,
+      "sha256": "cc4034da1102419c98857a6af8af47b1e7c8744e3c84f6262b9aee16f17fdbeb"
+    },
+    {
+      "path": "openwam/model/compile_options.py",
+      "size": 7573,
+      "sha256": "9b8f1bb4318f7d08725fd3a28d98017620c6fbe68a22bc5060b8ac871b705142"
+    },
+    {
+      "path": "openwam/model/video_backbone/__init__.py",
+      "size": 2305,
+      "sha256": "7852da94c4100ee9e6ea4471eac22292e4a5479eb83db4f407d6d3626941dd24"
+    },
+    {
+      "path": "openwam/model/video_backbone/base.py",
+      "size": 14973,
+      "sha256": "a0f59edeeca3f2168a8e28228bdeb6a207b4209bfb39dab93932c4db2e7062ec"
+    },
+    {
+      "path": "openwam/model/video_backbone/cosmos3/__init__.py",
+      "size": 381,
+      "sha256": "2cc6aaeeabd06919da9892cf04083edc7d398d3fbfb5e22cce205d317b3cae10"
+    },
+    {
+      "path": "openwam/model/video_backbone/cosmos3/_vendor/README.md",
+      "size": 1734,
+      "sha256": "96bd297b4c0d648ff70e28a0d538d32f8cac739e9a6fc4651b62c4542065a717"
+    },
+    {
+      "path": "openwam/model/video_backbone/cosmos3/_vendor/__init__.py",
+      "size": 353,
+      "sha256": "cde0e316da8c5342293d57de248cd9cb70a17cdcffaac51a6e63e315a63d9843"
+    },
+    {
+      "path": "openwam/model/video_backbone/cosmos3/_vendor/transformer_cosmos3.py",
+      "size": 43151,
+      "sha256": "404024f0a6b64a3e04db8a750496b37befd44d8a18e916aa2611998fb951ead3"
+    },
+    {
+      "path": "openwam/model/video_backbone/cosmos3/block_split.py",
+      "size": 3901,
+      "sha256": "773667b6e8f315fea2b6ba6d95f185d1daf03c1738d5ff26e9ee765c0bc212b4"
+    },
+    {
+      "path": "openwam/model/video_backbone/cosmos3/component_specs.py",
+      "size": 2459,
+      "sha256": "9baac02ceb80fa6b0fe7e793c7715ec8c0e0ac606e6a2415f89f3a1f2b677511"
+    },
+    {
+      "path": "openwam/model/video_backbone/cosmos3/dit_forward.py",
+      "size": 16545,
+      "sha256": "e4287af5e4d96cbd681e41d46fbb13ab1e6f7f8fb881dfc93633fa7836d3d053"
+    },
+    {
+      "path": "openwam/model/video_backbone/cosmos3/idm_merge.py",
+      "size": 4376,
+      "sha256": "76290fec1ae472d3080550229d6ba912d12a45efc66fa6fb0f7ee94d5727dc61"
+    },
+    {
+      "path": "openwam/model/video_backbone/cosmos3/pipeline_builder.py",
+      "size": 20152,
+      "sha256": "08e7bf92f67dcbf12efe22904ee662b15f8909595edaa2055d98ed9208de1f91"
+    },
+    {
+      "path": "openwam/model/video_backbone/cosmos3/scheduler.py",
+      "size": 1524,
+      "sha256": "287ecef7b792ffeb5bdcba889b501c4dfb104c9e154fcee07c14a4504cefce9b"
+    },
+    {
+      "path": "openwam/model/video_backbone/cosmos3/shared_block.py",
+      "size": 4074,
+      "sha256": "cb94c07f4ad86810d51dba4a5610aa78fc4823ff0c038e916fc8a04ddc94e09a"
+    },
+    {
+      "path": "openwam/model/video_backbone/cosmos3/text_pack.py",
+      "size": 11181,
+      "sha256": "d668130fedeb47d8971b553bdbd7802340e93341505844aaa691bd0329f68617"
+    },
+    {
+      "path": "openwam/model/video_backbone/cosmos3_backbone.py",
+      "size": 35392,
+      "sha256": "cf202492e5aa91b7fdfc90a7c2eace5556f7eced1d7059b54f0a21d031893147"
+    },
+    {
+      "path": "openwam/model/video_backbone/cosmos_predict25/__init__.py",
+      "size": 830,
+      "sha256": "618199642da0e1ee5a90389a74df5fb2e379cb77b99151af53e5b345369aa661"
+    },
+    {
+      "path": "openwam/model/video_backbone/cosmos_predict25/_vae_utils.py",
+      "size": 6683,
+      "sha256": "d23c0069379c63a59b02bac5d6eb673743c2ad37722c6e909c0a8057ac92a358"
+    },
+    {
+      "path": "openwam/model/video_backbone/cosmos_predict25/block_split.py",
+      "size": 8370,
+      "sha256": "d28233565b27ec735ca977d4878fd510416a7a225cf81b5beaa734166b3d344e"
+    },
+    {
+      "path": "openwam/model/video_backbone/cosmos_predict25/component_specs.py",
+      "size": 8136,
+      "sha256": "d3983e190c7ef52bcf9f38a19a68748f9e93815bd2d503caf3efeb223a1e9b3d"
+    },
+    {
+      "path": "openwam/model/video_backbone/cosmos_predict25/dit_forward.py",
+      "size": 9044,
+      "sha256": "ad1969361e22badbf1a054e52068e8b8556dbf6421d19092f4cfff0b4519821b"
+    },
+    {
+      "path": "openwam/model/video_backbone/cosmos_predict25/idm_merge.py",
+      "size": 6275,
+      "sha256": "20fea5e366080b6c2722df0d35c79aa65bf1f2128b56f08a1e31033bd6377ebd"
+    },
+    {
+      "path": "openwam/model/video_backbone/cosmos_predict25/pipeline_builder.py",
+      "size": 22597,
+      "sha256": "4add4a66a1328648d081b7a0341fb65ef8dc08982424c74b5cf901d2428a8025"
+    },
+    {
+      "path": "openwam/model/video_backbone/cosmos_predict25/scheduler.py",
+      "size": 5666,
+      "sha256": "943949f3b111c2587678d43c5fb7c4a27f2d93db6162ebe12e227d82a2bdf8d6"
+    },
+    {
+      "path": "openwam/model/video_backbone/cosmos_predict25/shared_block.py",
+      "size": 8291,
+      "sha256": "5cf886cbf8cce0c39f9a2c80ad32908745a4d7b9e8de640697bfe531981fae38"
+    },
+    {
+      "path": "openwam/model/video_backbone/cosmos_predict25/text_encoder.py",
+      "size": 14272,
+      "sha256": "7382a346cfb0245f60cc4d93c72de5f8fd5b1e609c0eb8055434382849187ade"
+    },
+    {
+      "path": "openwam/model/video_backbone/cosmos_predict25_backbone.py",
+      "size": 40351,
+      "sha256": "1708da2538fa2358d456e14ef736cc0e6fab59ae42f2a54ea498ecfa8e7c1c04"
+    },
+    {
+      "path": "openwam/model/video_backbone/encoder/__init__.py",
+      "size": 2522,
+      "sha256": "31e262c70a8342a49750eede1092f1008f7aaea12552681af58292f8d5abaa19"
+    },
+    {
+      "path": "openwam/model/video_backbone/encoder/base.py",
+      "size": 14666,
+      "sha256": "1880d59a83ddaa00eeec509e8a3890df12aa73bf8256412f0d29b8c502745c87"
+    },
+    {
+      "path": "openwam/model/video_backbone/encoder/dinov3.py",
+      "size": 21929,
+      "sha256": "c5ac7cf081afc023fe85c32940a807f201213f383d4141b4e68096cde2124eb9"
+    },
+    {
+      "path": "openwam/model/video_backbone/encoder/flux2_vae.py",
+      "size": 13888,
+      "sha256": "5c1aafeac26bcd04fcbd0d1f281f50ce7d70feaf3052d3d4a9223dacf7f25c27"
+    },
+    {
+      "path": "openwam/model/video_backbone/encoder/flux2_vae_src/__init__.py",
+      "size": 722,
+      "sha256": "1a1aa31b302baaaf3e9c81a29e491c4fd7c07b36ec43370eec3b463d49926d43"
+    },
+    {
+      "path": "openwam/model/video_backbone/encoder/flux2_vae_src/autoencoder.py",
+      "size": 15860,
+      "sha256": "f668a04dedfb59e89ca1bab7911e5277a7e360dfe34de6c5a226fefa3c76fb63"
+    },
+    {
+      "path": "openwam/model/video_backbone/encoder/registry.py",
+      "size": 2645,
+      "sha256": "cef1261bdce39ce7da6af3f6f01ebafaa6b6bc80ef76c728708fcaac7fc7a8b9"
+    },
+    {
+      "path": "openwam/model/video_backbone/encoder/svae/__init__.py",
+      "size": 700,
+      "sha256": "c3e56d7da6ea0da3dd52ab4b48478809147e8f403e061c1cedda0bfc2b458e8b"
+    },
+    {
+      "path": "openwam/model/video_backbone/encoder/svae/model.py",
+      "size": 16339,
+      "sha256": "3f042c5d19bed2d0c8e7f385af0266aea73b8bd49f37736c3356e5044997dfd1"
+    },
+    {
+      "path": "openwam/model/video_backbone/encoder/svae/reducer.py",
+      "size": 5280,
+      "sha256": "1307a715c6e1038a1618de856d00c17de1390fbc803bb780d375ad3c36d0f39b"
+    },
+    {
+      "path": "openwam/model/video_backbone/encoder/vjepa21.py",
+      "size": 19922,
+      "sha256": "ef7fa5217954f335121f8742c95f7aaac2d2975a670ddc7c21506b8f274f9c61"
+    },
+    {
+      "path": "openwam/model/video_backbone/encoder/vjepa21_src/__init__.py",
+      "size": 470,
+      "sha256": "5987e67b2c2b660faa5dc8cf45da0463ba59bd4cec219c1dafde36390f39a92f"
+    },
+    {
+      "path": "openwam/model/video_backbone/encoder/vjepa21_src/loader.py",
+      "size": 11653,
+      "sha256": "78c5f9732a690871f6e2ca98c551348447ffc30aeb886f1d580ed3caa4ac14d6"
+    },
+    {
+      "path": "openwam/model/video_backbone/encoder/vjepa21_src/masks_utils.py",
+      "size": 599,
+      "sha256": "a73deab0cf15169af3de7135e4e29528102de7254a3189b08184ee037a6d3cee"
+    },
+    {
+      "path": "openwam/model/video_backbone/encoder/vjepa21_src/modules.py",
+      "size": 15070,
+      "sha256": "2af7db5773f1ec27e42523198d9d54c16f2f698fdad0b9676741fed007523809"
+    },
+    {
+      "path": "openwam/model/video_backbone/encoder/vjepa21_src/patch_embed.py",
+      "size": 1276,
+      "sha256": "44c7e0938311d41572b7ae954637e0d8b339c0bf24fc7a84956d5084c3865398"
+    },
+    {
+      "path": "openwam/model/video_backbone/encoder/vjepa21_src/tensors.py",
+      "size": 1555,
+      "sha256": "4e4877b7ec9f971d66cc2464d71f135f979ca565da2c3e342005d4a092662f64"
+    },
+    {
+      "path": "openwam/model/video_backbone/encoder/vjepa21_src/vision_transformer.py",
+      "size": 17559,
+      "sha256": "2a6c82dbae7aea258b36288e47ccdcc68082b3a6de326359025acef501edaa99"
+    },
+    {
+      "path": "openwam/model/video_backbone/encoder/wan22_vae.py",
+      "size": 8121,
+      "sha256": "d64b5a1bf61358205e99bf955c9fcd03b9002dcdef1b0265c2555060f4198f6e"
+    },
+    {
+      "path": "openwam/model/video_backbone/registry.py",
+      "size": 4478,
+      "sha256": "55391cb0ce609eb2cd9af453da05d9fb4d3620fac2211465d399593d0d1d5f25"
+    },
+    {
+      "path": "openwam/model/video_backbone/wan/__init__.py",
+      "size": 697,
+      "sha256": "4d4584d530ecf6e7040717cb37d3fc566199e4445f4f69997cdf5918c948f6cc"
+    },
+    {
+      "path": "openwam/model/video_backbone/wan/_reference.py",
+      "size": 11865,
+      "sha256": "ed04a70fff711172102708993532b3f32068180be291ae27979717fcd1f5602f"
+    },
+    {
+      "path": "openwam/model/video_backbone/wan/action_tokens.py",
+      "size": 5067,
+      "sha256": "48353fdbf85b67721d81146779858d78fa87629851b876beda3236cb2b74cb79"
+    },
+    {
+      "path": "openwam/model/video_backbone/wan/camera_controller.py",
+      "size": 7129,
+      "sha256": "b345185636d9b6d5078c5b0017bb3f3140324a3a9a99d19306630ebe85082b63"
+    },
+    {
+      "path": "openwam/model/video_backbone/wan/component_specs.py",
+      "size": 7102,
+      "sha256": "37f76fd29e7d13dd7f8012fd918bc0b710485254222261d84659eb096045d509"
+    },
+    {
+      "path": "openwam/model/video_backbone/wan/conditioning.py",
+      "size": 15709,
+      "sha256": "63a81ca08947f719f405cbdc0e09e2a8062d71d0ee97bed2e140d54e24f6f0a4"
+    },
+    {
+      "path": "openwam/model/video_backbone/wan/dit_forward.py",
+      "size": 5459,
+      "sha256": "f1512a2544de9d217b2a8b5214989667a88bbe24405a0e008e42626c037792ea"
+    },
+    {
+      "path": "openwam/model/video_backbone/wan/encode.py",
+      "size": 6126,
+      "sha256": "0a5fc38f699142c7ef0dee367ec2128f3ff870553c6982e760a75fc66270ce3b"
+    },
+    {
+      "path": "openwam/model/video_backbone/wan/license/LICENSE",
+      "size": 11347,
+      "sha256": "d43b96112d60d83595395649e61c6bc215f568052a979320489556c6c1262eb1"
+    },
+    {
+      "path": "openwam/model/video_backbone/wan/license/NOTICE",
+      "size": 726,
+      "sha256": "767efa46cd22375fe831ad5faf73e124748ca804b762ed2bc0f86f1c24bd5386"
+    },
+    {
+      "path": "openwam/model/video_backbone/wan/loader.py",
+      "size": 12347,
+      "sha256": "199a8c08849eb4fe8f54e8c63ed9437fe1d4ab1be4d98f2ad7901cba946cf1cc"
+    },
+    {
+      "path": "openwam/model/video_backbone/wan/models/__init__.py",
+      "size": 195,
+      "sha256": "cdd745d2c7b2c0f980870a8453c72be61b6979842d2a2f9aa30b3b12a4c1a247"
+    },
+    {
+      "path": "openwam/model/video_backbone/wan/models/dit.py",
+      "size": 17449,
+      "sha256": "18872203de04b80ec16c2905050ac14f9da95065be7d457197ccd3e88773bc47"
+    },
+    {
+      "path": "openwam/model/video_backbone/wan/models/image_encoder.py",
+      "size": 12808,
+      "sha256": "b3d4ab510a1c509ed942f1ebe44c2ec3c989c324b5adcc3e74e46cabb331be5c"
+    },
+    {
+      "path": "openwam/model/video_backbone/wan/models/text_encoder.py",
+      "size": 10243,
+      "sha256": "89a59348e57b7bc29ce5fe62c944b48e5d88a7e1a8948d871cd6b8377a6798c6"
+    },
+    {
+      "path": "openwam/model/video_backbone/wan/models/vace.py",
+      "size": 2470,
+      "sha256": "fba13d8d30e452bc1486ff6dc1d29c5ed5728565cc21f46b668e6eac9ffad790"
+    },
+    {
+      "path": "openwam/model/video_backbone/wan/models/vae.py",
+      "size": 47985,
+      "sha256": "2821a28dc146f57b1cf73a555da516f5a5e37436b8f044a52fcba947d89a8bd5"
+    },
+    {
+      "path": "openwam/model/video_backbone/wan/pipeline_builder.py",
+      "size": 8295,
+      "sha256": "8722a0ee97d322c7c7248534b69de046caac764ab5ab362b1006d69c2f5f8ca5"
+    },
+    {
+      "path": "openwam/model/video_backbone/wan/preprocess.py",
+      "size": 3960,
+      "sha256": "4c94efdee0d25515a3020d0424947de37d2f2bd3760b18feb29020fb938f2377"
+    },
+    {
+      "path": "openwam/model/video_backbone/wan/reinit.py",
+      "size": 8183,
+      "sha256": "f6066c79d4c779a32a79ab6e114b07816ae8a9f724fc1089dbd49fad0d5a9788"
+    },
+    {
+      "path": "openwam/model/video_backbone/wan/shared/__init__.py",
+      "size": 98,
+      "sha256": "c01e6a2435bf65b2d03003cf5004a9ffe3d3d217c647088a37091e0cc9cdaeba"
+    },
+    {
+      "path": "openwam/model/video_backbone/wan/shared/configs/__init__.py",
+      "size": 158,
+      "sha256": "d7e797448041db3087c03dd2de32e04ad5a30c215fa1035a3c5508af114927c8"
+    },
+    {
+      "path": "openwam/model/video_backbone/wan/shared/configs/model_configs.py",
+      "size": 18671,
+      "sha256": "1ace74fdfb9b4f4da95d830e965a3532ae47b8c38bb302fa6eca0935b8e30094"
+    },
+    {
+      "path": "openwam/model/video_backbone/wan/shared/configs/vram_management_module_maps.py",
+      "size": 3066,
+      "sha256": "bba9ae3c883d1a26405dcb2a936dbe687f93485c08a6d4e8973e77436e8da175"
+    },
+    {
+      "path": "openwam/model/video_backbone/wan/shared/core/__init__.py",
+      "size": 1151,
+      "sha256": "637e048bee33fd930bae12f112a32c4cf57ff1c7f0915cbb33bd1427088f9340"
+    },
+    {
+      "path": "openwam/model/video_backbone/wan/shared/core/attention/__init__.py",
+      "size": 62,
+      "sha256": "a35181d7465175acd8c3034305782802ba309b5b1719930551711f8ad529fa2e"
+    },
+    {
+      "path": "openwam/model/video_backbone/wan/shared/core/attention/attention.py",
+      "size": 7986,
+      "sha256": "b209e7771cbf10dbe84af52e2a48f612391af0ee9b0600ab1de4d32684edcefe"
+    },
+    {
+      "path": "openwam/model/video_backbone/wan/shared/core/device/__init__.py",
+      "size": 314,
+      "sha256": "d956d5ec4e2bf19e4874ab1544688da3c79b10e28664ae7cb9d43afd0b930bde"
+    },
+    {
+      "path": "openwam/model/video_backbone/wan/shared/core/device/torch_device.py",
+      "size": 1335,
+      "sha256": "5d19384e35862965eed1c4889f20aa509f83dcdc679d8345276e369548754d63"
+    },
+    {
+      "path": "openwam/model/video_backbone/wan/shared/core/gradient/__init__.py",
+      "size": 92,
+      "sha256": "365e8b1a9f051b09758e974fc9b04f3410ffadcfdff3b47c6ce1f1860ab92cbc"
+    },
+    {
+      "path": "openwam/model/video_backbone/wan/shared/core/gradient/gradient_checkpoint.py",
+      "size": 908,
+      "sha256": "0bc3d9d50c3fd9479f1c4556dcdbfa169115b97be32eba2ece855dc3a9f57930"
+    },
+    {
+      "path": "openwam/model/video_backbone/wan/shared/core/loader/__init__.py",
+      "size": 340,
+      "sha256": "fb112dbe0007138c7f70f7b27deabd847e27198c5eb7a97fa22db81cd1a65a87"
+    },
+    {
+      "path": "openwam/model/video_backbone/wan/shared/core/loader/config.py",
+      "size": 4993,
+      "sha256": "8f36d3a609cf1af9521a4c85976ece2b0390423c33e807962a2eff287efcaa01"
+    },
+    {
+      "path": "openwam/model/video_backbone/wan/shared/core/loader/file.py",
+      "size": 4811,
+      "sha256": "9d0a9eb3621694396700ab5580a9a2a123816963c8d70d0fe50776bfd71a4308"
+    },
+    {
+      "path": "openwam/model/video_backbone/wan/shared/core/loader/model.py",
+      "size": 4440,
+      "sha256": "88a00660d3b5f5e7e06abf4ae0a6a2aace1cbf5e18281eb3f5e8d9f2da885afd"
+    },
+    {
+      "path": "openwam/model/video_backbone/wan/shared/core/vram/__init__.py",
+      "size": 376,
+      "sha256": "170f0e565eca39afbe2da7bd0b207bdbdcc46e6783ee69bf87d20eae2d3149c8"
+    },
+    {
+      "path": "openwam/model/video_backbone/wan/shared/core/vram/disk_map.py",
+      "size": 3411,
+      "sha256": "ec76daccedd9140876229fd493ee440d6d480d000512db9ee4c1ac74bd178a4a"
+    },
+    {
+      "path": "openwam/model/video_backbone/wan/shared/core/vram/initialization.py",
+      "size": 766,
+      "sha256": "734906bba106f92af004cb1fea04b47f492ef2e735b1deb0b00ce4c374e701a8"
+    },
+    {
+      "path": "openwam/model/video_backbone/wan/shared/core/vram/layers.py",
+      "size": 19631,
+      "sha256": "d87cf1b61116274a755600922bff7033a04d6e747d47da7229da4f018d1f52a6"
+    },
+    {
+      "path": "openwam/model/video_backbone/wan/shared/diffusion/__init__.py",
+      "size": 65,
+      "sha256": "abae027bad3df0767a2bb7072afe9008533a2fd0dcff01af38957be977f706d7"
+    },
+    {
+      "path": "openwam/model/video_backbone/wan/shared/diffusion/flow_match.py",
+      "size": 10030,
+      "sha256": "aacfac9bb614fed6cc142a8a90eab0fce54c4dbf8efec8b3c37a73d8b4756201"
+    },
+    {
+      "path": "openwam/model/video_backbone/wan/shared/models/__init__.py",
+      "size": 176,
+      "sha256": "1b680eb5d810c7a1d812c3b4144788ef5879dd86ead2882bd7f7d0af96d36173"
+    },
+    {
+      "path": "openwam/model/video_backbone/wan/shared/models/model_loader.py",
+      "size": 5859,
+      "sha256": "e33dc7a985650a68ab5baf0bfdce9171efe4629fe3c9a315d399bc46b663eb7a"
+    },
+    {
+      "path": "openwam/model/video_backbone/wan/shared/utils/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "openwam/model/video_backbone/wan/shared/utils/state_dict_converters/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "openwam/model/video_backbone/wan/shared/utils/state_dict_converters/wan_video_dit.py",
+      "size": 4994,
+      "sha256": "fe0db0081e71079eb6a73870aea695f266bb0ba90a879c3add6238a5eb28cc33"
+    },
+    {
+      "path": "openwam/model/video_backbone/wan/shared/utils/state_dict_converters/wan_video_image_encoder.py",
+      "size": 262,
+      "sha256": "2aeab496510090de733d22152b05041bcce038d81bb83ae6562a522352440958"
+    },
+    {
+      "path": "openwam/model/video_backbone/wan/shared/utils/state_dict_converters/wan_video_vace.py",
+      "size": 159,
+      "sha256": "cc6c39d6e2b16819c341ea76dff680bea11d16817e353229344f6fb98e2e30ca"
+    },
+    {
+      "path": "openwam/model/video_backbone/wan/shared/utils/state_dict_converters/wan_video_vae.py",
+      "size": 258,
+      "sha256": "e6318d4967f94cbc1dde1005f9fdc662050d967704c20ad1ee66d0cd3dcce538"
+    },
+    {
+      "path": "openwam/model/video_backbone/wan/text_cache.py",
+      "size": 3193,
+      "sha256": "37bf4e1f0da1dc6ea2d99f08bd28175c88e6797e7c28f59ef6ddac960cde71f4"
+    },
+    {
+      "path": "openwam/model/video_backbone/wan/variants/__init__.py",
+      "size": 1771,
+      "sha256": "5e35c6a4b666be5e97cf2fad68522f13e03dc7b1a79f06c1d9522dd26cca1e19"
+    },
+    {
+      "path": "openwam/model/video_backbone/wan/variants/base.py",
+      "size": 1312,
+      "sha256": "7dadeb50e66f5ce2babbeea926994de39dff900c173b6fc277d1126b04c7a74d"
+    },
+    {
+      "path": "openwam/model/video_backbone/wan/variants/i2v.py",
+      "size": 2991,
+      "sha256": "9deb44f9bc25092b07b385e08cf63e28f76639594e8b0d83e4bf0aa1d979aff6"
+    },
+    {
+      "path": "openwam/model/video_backbone/wan/variants/ti2v.py",
+      "size": 1157,
+      "sha256": "569ef4dfc025f5320767304301ef92e94bc2606eaddcc3f306c05d84122779b6"
+    },
+    {
+      "path": "openwam/model/video_backbone/wan/variants/vace.py",
+      "size": 1662,
+      "sha256": "3ba040515b5c0816e7568605d84a851c97abc8c66487c4b4cbeb3de3ad0f2685"
+    },
+    {
+      "path": "openwam/model/video_backbone/wan_backbone.py",
+      "size": 54106,
+      "sha256": "a049450ec61b7afb68223c1ea93f57c0b2489735f8100070fefbaccc8978a4ba"
+    },
+    {
+      "path": "openwam/model/vlm_backbone/__init__.py",
+      "size": 1038,
+      "sha256": "c4f0b4df22d160f7aaca18d1f327f32c7165537914e0c73d4e47062e19191a81"
+    },
+    {
+      "path": "openwam/model/vlm_backbone/base.py",
+      "size": 2641,
+      "sha256": "93886bd6e87a8be7a7be89a98d305728cb8d765f22a7ec662edc90a4cba86bc4"
+    },
+    {
+      "path": "openwam/model/vlm_backbone/qwen3_vl_backbone.py",
+      "size": 9714,
+      "sha256": "7bca136c3940cfcde441c957454d6daee7fd9b7886404f8ec9c7163898eb54f5"
+    },
+    {
+      "path": "openwam/model/vlm_backbone/registry.py",
+      "size": 1472,
+      "sha256": "917b43d6597b754179223719c41de4747ca83f9c528f8a7591507a9cd1a18f6a"
+    },
+    {
+      "path": "openwam/train/__init__.py",
+      "size": 204,
+      "sha256": "726b67ac9d85e98734f5ea8759a1e62de693008b06eae2a3b1dfe70376cb405a"
+    },
+    {
+      "path": "openwam/train/openwam_trainer.py",
+      "size": 39242,
+      "sha256": "3c869fcecee32bc6de22e916f216cd39169168891764ecb84b070dbe1e6ac60e"
+    },
+    {
+      "path": "openwam/train/utils/__init__.py",
+      "size": 288,
+      "sha256": "921f21e666a7697ec19f7e43d9f804e85e605280e68ce25c36a1d3f63e7b544e"
+    },
+    {
+      "path": "openwam/train/utils/checkpoint_validation.py",
+      "size": 5172,
+      "sha256": "a631722da9a010197e7fa04200fe188f1360deeeed1af65eaac191d95003c493"
+    },
+    {
+      "path": "openwam/train/utils/checkpointing.py",
+      "size": 16877,
+      "sha256": "55f8cf958912738370757e4304d7ca692870f6de85257e9c21fbc034a7574304"
+    },
+    {
+      "path": "openwam/train/utils/ckpt_model_loader.py",
+      "size": 17281,
+      "sha256": "7332c896bd9591b6de00ee534109062bb4e287d0206b675047674794b9b105a5"
+    },
+    {
+      "path": "openwam/train/utils/optimizer_groups.py",
+      "size": 1988,
+      "sha256": "8dab40fa49f71f42368c9902b668148a402580b03fcc56d122c8cb2227182012"
+    },
+    {
+      "path": "openwam/train/utils/robodojo_exact_optimizations.py",
+      "size": 2716,
+      "sha256": "6c023d56abf0b8c15033e0bfcb11b6bd013fc25da514c6cde5f672a73ecfb6d1"
+    },
+    {
+      "path": "openwam/train/utils/runtime_optimizations.py",
+      "size": 12362,
+      "sha256": "ed8e21bece9e0cec8634cc83896a3a6169c6f4ad36506e6f754c4244cb021efe"
+    },
+    {
+      "path": "openwam/train/utils/seeding.py",
+      "size": 11148,
+      "sha256": "251ecbcef57c01ad28ca3a32f616c75871e09b9d72575827a3b72aee8afd76cc"
+    },
+    {
+      "path": "openwam/train/utils/swanlab_tracking.py",
+      "size": 1900,
+      "sha256": "80515c5d62c56ba2e412a261b7eb1fa50442c31870e294bb7b6fc8dc704b76d9"
+    },
+    {
+      "path": "openwam/train/utils/training_utils.py",
+      "size": 6264,
+      "sha256": "f422e9170b3ddc595be28511e5a13c547f6786bb6e33aa3f8456820647f8aecf"
+    },
+    {
+      "path": "openwam/train/utils/vae_optimizations.py",
+      "size": 1017,
+      "sha256": "f971c9724f6369189e1218dbc27144db0b7a27ec05c9d946c7133d0e950dd22d"
+    },
+    {
+      "path": "pyproject.toml",
+      "size": 1813,
+      "sha256": "1f10f4d4eb8477778c7aef6123e10da07287e36d15667a54d07a46179f98f054"
+    },
+    {
+      "path": "pytest.ini",
+      "size": 66,
+      "sha256": "e0e76b5c1594195370b29d46d4415e9f04d239fd3e34c9aed198298008736055"
+    },
+    {
+      "path": "scripts/assemble_robodojo_cache.py",
+      "size": 6278,
+      "sha256": "e51c3acc7b328920e66895d7dc78012840620020bad76afabfb0888623943248"
+    },
+    {
+      "path": "scripts/audit_robodojo_sources.py",
+      "size": 3686,
+      "sha256": "39a880d111eb61d5bd381b7136e747f59211a83fe3123269dbdf2d7a6079f43d"
+    },
+    {
+      "path": "scripts/benchmark_cosmos3_attention_checkpoint.sh",
+      "size": 1104,
+      "sha256": "64083da4320aa064e970c19154452ddfd7d34a06c67ba517c6bba29f87aa7888"
+    },
+    {
+      "path": "scripts/benchmark_cosmos3_ffn_checkpoint.sh",
+      "size": 611,
+      "sha256": "eff3d688a238ab0373b43d80fe6fa3148650e401acd7e5d890cc538c65422a33"
+    },
+    {
+      "path": "scripts/benchmark_cosmos3_fused.sh",
+      "size": 810,
+      "sha256": "cafd64448490e6fbd1d9d274bad585deccbb3852f147d8953b6bd8448fc6a85c"
+    },
+    {
+      "path": "scripts/benchmark_cosmos3_no_checkpoint.sh",
+      "size": 1492,
+      "sha256": "ec6561bbc064801b7ecbd79ffaa0cb00c855ff2f66b7805020c39de592ee17f5"
+    },
+    {
+      "path": "scripts/benchmark_cosmos3_optimizations.sh",
+      "size": 1176,
+      "sha256": "b474a8c959a588abb343c408b5d27837582d1e1370dd7433d4285fa22ac4343e"
+    },
+    {
+      "path": "scripts/benchmark_cosmos3_selective.sh",
+      "size": 803,
+      "sha256": "f3c6dba149d601efbff8b91c0f91616678d335c8437ca473b4412e7b2864982c"
+    },
+    {
+      "path": "scripts/benchmark_no_checkpoint.py",
+      "size": 1080,
+      "sha256": "aaa599b785d9c49f2536e7ce4c2617f0da901c83c42ca2cc8e9d0d2c8d96663c"
+    },
+    {
+      "path": "scripts/benchmark_robodojo_cached.py",
+      "size": 6322,
+      "sha256": "ed8c3ee50b5f949a318abd4b42ade5b84980b3bc6d49199dc5754405fac2bc95"
+    },
+    {
+      "path": "scripts/benchmark_robodojo_codecs.py",
+      "size": 5277,
+      "sha256": "1a62b15c3be216ed51f8d6ca24abb8ad0a1e645eee20a6f220ff8c7540aad578"
+    },
+    {
+      "path": "scripts/build_robodojo_vae_cache.sh",
+      "size": 1545,
+      "sha256": "e5b55e60180dc4ff4127bff9d55bc3779ab3308c3ef159206d6e58f6f203ff0d"
+    },
+    {
+      "path": "scripts/cache_libero_vae.py",
+      "size": 14296,
+      "sha256": "92d4469dd2af4642566dbef9c94ec3122987e092480e5711e82832c82904c487"
+    },
+    {
+      "path": "scripts/cache_robodojo_vae.py",
+      "size": 16344,
+      "sha256": "dc34f8d17bd1a030083f1675af9ece2ee34f39b7eef760e847e526c7d8d1decd"
+    },
+    {
+      "path": "scripts/check_cache_lookup_batch.py",
+      "size": 1225,
+      "sha256": "c3a22068ba00d661047ab74a9b86a6f519aa272971d3012c0d4caa67c936f838"
+    },
+    {
+      "path": "scripts/check_compact_text_context.py",
+      "size": 4767,
+      "sha256": "599668de234e1933b9571ea9a2d247740ec06123783337d6f55f42ea8a38166a"
+    },
+    {
+      "path": "scripts/check_cosmos3_droid.py",
+      "size": 4687,
+      "sha256": "63344de930fd15fd68e316367912683f5ca147b967799d2d626bae56d90e906f"
+    },
+    {
+      "path": "scripts/check_cosmos3_threeview.py",
+      "size": 4138,
+      "sha256": "003bb6f91d35579be640edbeb923686d8709c3a09714a67ca49eeda85c9d9c34"
+    },
+    {
+      "path": "scripts/check_norm_gate_compile.py",
+      "size": 3216,
+      "sha256": "816e2edd23550a7fdc0197a719a390810afc43da9940a91677edf95b2f88ed4f"
+    },
+    {
+      "path": "scripts/check_pixel_transport.py",
+      "size": 1937,
+      "sha256": "828f5a2e7335aff5fc692d135269710696b92338e489ad492179568d168554fb"
+    },
+    {
+      "path": "scripts/check_robodojo_checkpoint_pattern.py",
+      "size": 4961,
+      "sha256": "589fc6c639d3f5ad347f09e41ab77f963dad0adce7535384cb304696bc7939d3"
+    },
+    {
+      "path": "scripts/check_robodojo_exact_vae.py",
+      "size": 3987,
+      "sha256": "88e64e8adc7da229c6114540e6c114be83159c2d09ce7a12a936fefd8edb4668"
+    },
+    {
+      "path": "scripts/check_robodojo_runtime.py",
+      "size": 10592,
+      "sha256": "771a4aeb4fbb2f30b31591c4387d8f1a1a100ca898b86709d0eaeb800fb91fe7"
+    },
+    {
+      "path": "scripts/check_selective_checkpoint.py",
+      "size": 2979,
+      "sha256": "ebfd1a9de3d83452fb5ff4c887cf995debaba64c93abac75d2581ee08f2e1fea"
+    },
+    {
+      "path": "scripts/check_training_optimizations.py",
+      "size": 4392,
+      "sha256": "b218273b025b1ae4756ea75529c7ccb79f5213695bbc7499bee89549abc6f100"
+    },
+    {
+      "path": "scripts/check_vae_autotune.py",
+      "size": 2412,
+      "sha256": "644f4d296dd0c23f1a42b9394b599dfb47fe65e883854db43ce48027433229c1"
+    },
+    {
+      "path": "scripts/check_vae_memory_format.py",
+      "size": 3011,
+      "sha256": "b60cdd8da084cd92da45faed17a34446503c2aa66c8ac6b82f3d23ae275d9912"
+    },
+    {
+      "path": "scripts/check_vae_norm_compile.py",
+      "size": 3276,
+      "sha256": "dc0c79611081f4722a34bccfcfbcf6b0d7bfbf4525c57d62c4f33346d5305459"
+    },
+    {
+      "path": "scripts/compare_robodojo_optimization.py",
+      "size": 2972,
+      "sha256": "b9dbdef690809309128ac1c895a004ec5ed5ab9a594d0bdf7806960e346bb8d0"
+    },
+    {
+      "path": "scripts/deploy.py",
+      "size": 668,
+      "sha256": "eaa1751f03cf4b6120c64d09455f1fa972b000f1b64477eecbbb3b8a55b3339b"
+    },
+    {
+      "path": "scripts/deploy.sh",
+      "size": 3712,
+      "sha256": "5809aad484c10aba774ace53c451742d2e0a106dc55b04fd5f41c75bac0ebdc2"
+    },
+    {
+      "path": "scripts/download_assets/download_benchmark_data.py",
+      "size": 24853,
+      "sha256": "e030e6d9eab494b5654fd42425dec6f02d87ee90d31fe85a8ca6689cf109034d"
+    },
+    {
+      "path": "scripts/download_assets/download_openwam_checkpoints.py",
+      "size": 16670,
+      "sha256": "4fe90172e33bf6ecc2e2998e48d935c540af4b6d57d2bac3d55054e80b6f0ebd"
+    },
+    {
+      "path": "scripts/download_assets/download_video_backbone.py",
+      "size": 14091,
+      "sha256": "23036def68b858de7eebd6dcdefa29f842729160a626ad665d6cab4fe26481c7"
+    },
+    {
+      "path": "scripts/download_assets/download_visual_encoder.py",
+      "size": 15983,
+      "sha256": "52efc694a8da92833bec5cea7cb4f0f6eaa48b223a901ee159b9263f7a488277"
+    },
+    {
+      "path": "scripts/download_assets/download_vlm_backbone.py",
+      "size": 12856,
+      "sha256": "84a2f493e140898c0e369eb33b25efeca6674e97e3e045386a1a02bc8c18dcda"
+    },
+    {
+      "path": "scripts/finish_robodojo_validation.py",
+      "size": 3989,
+      "sha256": "e19f49be11ad84ef83a101e5b62534fe27dd316c6a9c52e46640ec960bcc8760"
+    },
+    {
+      "path": "scripts/inference_test/inference_continuous_test.py",
+      "size": 6936,
+      "sha256": "c3616c95f1eb3de6324a088f1585a6719bc360deaaeddf6b065f3f554b9222a6"
+    },
+    {
+      "path": "scripts/inference_test/inference_single_test.py",
+      "size": 6061,
+      "sha256": "80147edb6cdfa712ec0085c29993463c17087ddae6d5a10b8bc173ef2e57ceac"
+    },
+    {
+      "path": "scripts/inspect_cosmos3_training.py",
+      "size": 8149,
+      "sha256": "4414f438aeaa1ce10fc6b2c5d0e1d54ab7197360abc8cf5fcaa139d320526237"
+    },
+    {
+      "path": "scripts/install_cosmos_predict25.sh",
+      "size": 8657,
+      "sha256": "27e7be2be2cd212e8693e73974a4feffb9d8e86afddaf8f46397e2654e173553"
+    },
+    {
+      "path": "scripts/install_libero_cache_hooks.py",
+      "size": 2188,
+      "sha256": "ec3a53449f902261722f93d8879600eecb539db30cf00ec838c3bc9355f3dba0"
+    },
+    {
+      "path": "scripts/launch_libero_when_idle.py",
+      "size": 7410,
+      "sha256": "fc74e1c370206cb2bbe5a2674f55a1cc786c4fedc0e4c93137218ce43c5f94ba"
+    },
+    {
+      "path": "scripts/launch_robodojo_verified.py",
+      "size": 2991,
+      "sha256": "dc389fd762f1897506e9f112cc27437263a984c00c497df1dc45ecf8ae4e2697"
+    },
+    {
+      "path": "scripts/launch_robodojo_volcano_resume.sh",
+      "size": 6847,
+      "sha256": "17c213577a7d3f5cb47af1aa126f469dd3f5a8b0e1c70a6f9a3ce2b88323ce66"
+    },
+    {
+      "path": "scripts/monitor_benchmark_memory.py",
+      "size": 1246,
+      "sha256": "837da5d8189be112931a66af6a143d66760398ae5e4cb3093802e66bafab8900"
+    },
+    {
+      "path": "scripts/monitor_robodojo_training.py",
+      "size": 8507,
+      "sha256": "a2a10882001f95f818e65b994154a80d1d5e19b6fa0b5fbef8a62b959ba1fe23"
+    },
+    {
+      "path": "scripts/precompute_cosmos3_text.py",
+      "size": 6800,
+      "sha256": "523613733227c092b9191691e619fce9c0d075468d39d47263545c7ca9a490d4"
+    },
+    {
+      "path": "scripts/precompute_libero_text.py",
+      "size": 4474,
+      "sha256": "fb6fcdd7e5a62959b9c7649f6017a98e811cb704df8b0a1bd7d9df54ec51db49"
+    },
+    {
+      "path": "scripts/precompute_robodojo_text.py",
+      "size": 3514,
+      "sha256": "3278594e84954696f09ed2fc6400c41c5913ed11b0aafc38865070097e43bd8a"
+    },
+    {
+      "path": "scripts/prepare_cosmos3_droid.py",
+      "size": 7343,
+      "sha256": "bebeda6db042aca4c6e8268066f22ffa409f9614414d8c48b27fafede6439102"
+    },
+    {
+      "path": "scripts/prepare_libero_frontier_20261022.py",
+      "size": 16092,
+      "sha256": "e55b6df0eca69ce3ccf74677a5e7790a78a245adc6e90e941dbf232bceb2a609"
+    },
+    {
+      "path": "scripts/prepare_robodojo_openwam.py",
+      "size": 13014,
+      "sha256": "2cdfd9a191f56713407b3609911f77947c4211220d9236af793e4b4afca4f307"
+    },
+    {
+      "path": "scripts/profile_cosmos3_droid.py",
+      "size": 3928,
+      "sha256": "be5adf3a4095b371ae421f4990d69744694d23e53510588fe762aa642e0dc9af"
+    },
+    {
+      "path": "scripts/profile_cosmos3_droid.sh",
+      "size": 986,
+      "sha256": "27d35878ed74b4652785e271a6f11ab9a403e757f46e419a849466d50df66fbe"
+    },
+    {
+      "path": "scripts/profile_cosmos3_droid_optimized.sh",
+      "size": 1347,
+      "sha256": "d5b56382906400fc77a4ca90f8549a023ab83d8a9d20ca01cf99b7578bdeacfc"
+    },
+    {
+      "path": "scripts/profile_libero_training.py",
+      "size": 4672,
+      "sha256": "4440925081b99f6eaffe9e1d43ae7af931a120898aa37f08d19331be981ebc28"
+    },
+    {
+      "path": "scripts/profile_libero_vav_bounded.py",
+      "size": 3471,
+      "sha256": "5032048335ea9ebe5dc07d50c9b42ebd013fde541a4ae8ce42dc186a9c4c780b"
+    },
+    {
+      "path": "scripts/profile_libero_vav_tail.py",
+      "size": 848,
+      "sha256": "32c135b9a2df89d3badcd9d53316f5db4044c67d2cc0f16cb1a4827d38e482fe"
+    },
+    {
+      "path": "scripts/profile_robodojo_accumulation.py",
+      "size": 3723,
+      "sha256": "61016cf6ea431d5afc74a7883a9f3a59cff616f56632dfd8e0d62523176100f2"
+    },
+    {
+      "path": "scripts/profile_robodojo_cache.py",
+      "size": 6372,
+      "sha256": "44b64eede90465dc3a16fe54d3cdaeb356fc268938b7d9cf20c2530555ba2711"
+    },
+    {
+      "path": "scripts/profile_robodojo_training.py",
+      "size": 4588,
+      "sha256": "d6a5e50e90289fbea63b2c5b82a7b56b78754560d185f870bff01025ad74be86"
+    },
+    {
+      "path": "scripts/repair_robodojo_videos.py",
+      "size": 8284,
+      "sha256": "da53399d957c401252bea0e68f1696a942c8654c7dd20116b7346360eb09271f"
+    },
+    {
+      "path": "scripts/robodojo_job_guard.sh",
+      "size": 3468,
+      "sha256": "1db2613106e5f1248302209f11db6893b8fba7b17e825951f6fbbe5f3008d48a"
+    },
+    {
+      "path": "scripts/robodojo_runtime_env.sh",
+      "size": 837,
+      "sha256": "5b3f165d11954d78611ac89de88e335ceb58013f7b3540b9f4fefc87ebc71952"
+    },
+    {
+      "path": "scripts/run_cosmos3_pipeline.sh",
+      "size": 2052,
+      "sha256": "accf7d231f60b6bac78b0fbb19d03ed6eb68647f7383cbcd5b6ed1d86a634a62"
+    },
+    {
+      "path": "scripts/run_libero_cache_8gpu.py",
+      "size": 2502,
+      "sha256": "2c8366e33fe89c78231abd74227e6fc7102c1b97ddfadffd6fe0532c0e0f48e1"
+    },
+    {
+      "path": "scripts/run_robodojo_accumulation_pair.py",
+      "size": 5769,
+      "sha256": "a36003995e8d0c83ab6cc2c95e23353854db0af5e0c1992ec6ad0b950ed4c2a3"
+    },
+    {
+      "path": "scripts/run_robodojo_speed.py",
+      "size": 4233,
+      "sha256": "733595f4d169bb3ca8e4d76f742b316859364d6ff3423bb3cd1f87b61babdafb"
+    },
+    {
+      "path": "scripts/start_libero_autostart_20261022.py",
+      "size": 4542,
+      "sha256": "7381ff5baa08c64a4b11510955ac09c41a4ad9c22f937aa6e07b69325f3ca299"
+    },
+    {
+      "path": "scripts/start_libero_final_20261022.py",
+      "size": 4058,
+      "sha256": "f5f501bb3d00080a6e63758aca7c54658be88d60c0d659ea08e728aec45c2f3f"
+    },
+    {
+      "path": "scripts/start_libero_official_20261022.py",
+      "size": 3287,
+      "sha256": "477ca063cbf64cec4c1c0e9a512ec0c212fd8e514d32f901cb2ae42672f3ebaf"
+    },
+    {
+      "path": "scripts/start_libero_optimized_20261022.py",
+      "size": 3859,
+      "sha256": "c88170f5aec53481f648e02610212094f6c85fc02f60cd206f00cd3aa99b917f"
+    },
+    {
+      "path": "scripts/start_robodojo_formal_20261021.py",
+      "size": 2605,
+      "sha256": "c2f212275897929d7c7d5799c1bbddaaf56ba92c5b1aa52be0ffb7ecdfcd9598"
+    },
+    {
+      "path": "scripts/stop_robodojo_at_20000.py",
+      "size": 4035,
+      "sha256": "206f2bb50aa64e8d9c02f11334b048f38a4b166cc64b0a6a16721c035ea88df5"
+    },
+    {
+      "path": "scripts/summarize_cosmos3_acceleration.py",
+      "size": 8913,
+      "sha256": "47d222ffa0845c42f79c9861f3fcc97ef6fd6649ded0e7b2b5b415dcc848c91f"
+    },
+    {
+      "path": "scripts/summarize_robodojo_accumulation.py",
+      "size": 7410,
+      "sha256": "e0d9abf957f99623f719a1502ef5aacbbb36c7b193bac29de35e57b111c14a48"
+    },
+    {
+      "path": "scripts/summarize_robodojo_cached.py",
+      "size": 1998,
+      "sha256": "6a80f2718c7f7f729f84824de4f1886b10fc1b916f2b33857708685050bc91f9"
+    },
+    {
+      "path": "scripts/summarize_robodojo_speed.py",
+      "size": 6043,
+      "sha256": "ea7fe7d88be8eb0d4c927bb689b843d74c80511729193e481161f40ffb5e169b"
+    },
+    {
+      "path": "scripts/svae_train/collect_svae_features.py",
+      "size": 12735,
+      "sha256": "59bcb56367aa03ef0ca53d89286d66d52fe18b89f0798196c9c3b6f6a0194a72"
+    },
+    {
+      "path": "scripts/svae_train/collect_svae_features.sh",
+      "size": 3708,
+      "sha256": "69e6533efd1b258abd17234a0e82cc9b6b62e60a36a0ca661f40eabbe92c0ee3"
+    },
+    {
+      "path": "scripts/svae_train/train_svae.py",
+      "size": 16018,
+      "sha256": "42500f5f6cbff65a3bab9d8ff0d541261f6d7a3a5005f6abd3b6690ad9cc8c1f"
+    },
+    {
+      "path": "scripts/svae_train/train_svae.sh",
+      "size": 3140,
+      "sha256": "e438f6341b44acc1d552187ea3d50ef7b17f2efd1635d9d80054061cfe4471ab"
+    },
+    {
+      "path": "scripts/test_robodojo_cache_scheduler.py",
+      "size": 3436,
+      "sha256": "bde8eb4c294ea611205aeb3332f4c2989f483d0888df32d81738a48a02053562"
+    },
+    {
+      "path": "scripts/test_robodojo_job_guard.py",
+      "size": 3270,
+      "sha256": "54233b9d3279aff4e9149b31cff0ab1386a46c360cd8db5e6767973a9ed4126f"
+    },
+    {
+      "path": "scripts/test_robodojo_latent_cache.py",
+      "size": 5589,
+      "sha256": "d92403f5f6c03b9ba040247dc410087cc03d3e4902782db3f59dc3d797a6372a"
+    },
+    {
+      "path": "scripts/test_robodojo_runtime_diagnostics.py",
+      "size": 2411,
+      "sha256": "e546458116cb895e10b7426167e47145a5b3a48bcc95dc3432fdbee206c20c24"
+    },
+    {
+      "path": "scripts/test_stop_robodojo_at_20000.py",
+      "size": 2815,
+      "sha256": "82da396680ff2ad9986d0a62d9a4b57d694399e36a07c3ac5a782135cb8239a9"
+    },
+    {
+      "path": "scripts/test_swanlab_tracking.py",
+      "size": 2783,
+      "sha256": "b242901df4b70214908952326d3bf126bb3357e0a3dbc62ed6838414e21cf910"
+    },
+    {
+      "path": "scripts/test_volcano_resume_preflight.py",
+      "size": 2594,
+      "sha256": "23a58c59f217f3ac2df4802fc5f62c875568bec778e9074c291c927fff5be314"
+    },
+    {
+      "path": "scripts/train.py",
+      "size": 7552,
+      "sha256": "f234ccc68145de91b754146c76fd7850ba9daf53c9a6cd2107401b3ce24a324f"
+    },
+    {
+      "path": "scripts/train.sh",
+      "size": 2885,
+      "sha256": "61e510f4bcdb547c3c238f1c6446a05244c55797accea0570828faa2c6011eff"
+    },
+    {
+      "path": "scripts/train_cosmos3_droid.sh",
+      "size": 1954,
+      "sha256": "1c114c437558af351dc7d5e6e85f1d8f76d0cb233c39c2b2c82d78fe685fe15f"
+    },
+    {
+      "path": "scripts/train_cosmos3_droid_fast.sh",
+      "size": 1038,
+      "sha256": "64042ec39523191f378a0c5532feb1e284d7860c7e0e6fffe4870cb87c828f47"
+    },
+    {
+      "path": "scripts/train_cosmos3_droid_stride3.sh",
+      "size": 1069,
+      "sha256": "6ca04b77e5ef86fdb597a8ea67fb609dbd1c8f46d7aacf38ace2c4d0a162d86d"
+    },
+    {
+      "path": "scripts/train_cosmos3_droid_stride3_threeview.sh",
+      "size": 1826,
+      "sha256": "fc3efeb68e7b6648333896ea9d202a5422b64f6dd17b36e61873e66ecf7a571d"
+    },
+    {
+      "path": "scripts/train_robodojo_cached.sh",
+      "size": 601,
+      "sha256": "2f7bb3151b0d4c424a99625ddb0ff592e1defa78952fa613e541e8c8b3b4737c"
+    },
+    {
+      "path": "scripts/train_robodojo_optimized.sh",
+      "size": 1588,
+      "sha256": "da94ea6eb395a7b4c517098087f4241de1be8cb2f805f9bb503ff4820ced082b"
+    },
+    {
+      "path": "scripts/train_robodojo_prepared.sh",
+      "size": 1692,
+      "sha256": "1a5c8b0973121c67474b01923399474e444df066d6b7d0882b9b8bacabae0310"
+    },
+    {
+      "path": "scripts/train_robodojo_verify_save.py",
+      "size": 1416,
+      "sha256": "81bcc92bce01cb4afda1bb83f48c620e8fa1921e5824b275f7770f23454be133"
+    },
+    {
+      "path": "scripts/validate_cached_optimizations.sh",
+      "size": 745,
+      "sha256": "0bb16eac60daf4e4700bea4e3189d8cfcce4eee654d87f384a2d45f3a170c0f5"
+    },
+    {
+      "path": "scripts/validate_cosmos3_text_cache.py",
+      "size": 3086,
+      "sha256": "dd650bb9e860494ffd14bd663c5a2f3c6fb45dce0f18ee726b514a1277484372"
+    },
+    {
+      "path": "scripts/validate_libero_frontier_20261022.py",
+      "size": 8634,
+      "sha256": "bccfc047cdd53d30704f9b43b222e5e1cbd6f97859cbb8237bda30b39ebe5476"
+    },
+    {
+      "path": "scripts/validate_robodojo_prepared.py",
+      "size": 16228,
+      "sha256": "261e2bf55f5acc98ebb071de6444b3ec31547481e03f24406c46557b9327e292"
+    },
+    {
+      "path": "scripts/validate_vav_cache_grouping.py",
+      "size": 2874,
+      "sha256": "6c3e17639b7072e7f5d05ba98c56987ad7873adf0ef71c354de4dc6a853cc175"
+    },
+    {
+      "path": "scripts/verify_libero_cache.py",
+      "size": 5358,
+      "sha256": "42964e086307a39c6bc2416984504da138a8fe24c64021bc133fb2bb76606154"
+    },
+    {
+      "path": "scripts/verify_robodojo_persisted_cache.py",
+      "size": 4070,
+      "sha256": "68434b4953d74919dd8dc04c6aa9318a35e0835551a529e20adbc075405bce26"
+    },
+    {
+      "path": "tests/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "tests/_assets.py",
+      "size": 1631,
+      "sha256": "9b3dfc6100310edb461ccfe80de91e0ca043ae5d47dad68a8e6731ea3a16210a"
+    },
+    {
+      "path": "tests/benchmarks/fake_libero_labtasker_runtime.py",
+      "size": 4859,
+      "sha256": "87daa3466b8c813461a4cae5bfebd48ee883de2f0644ff9ee128a3aa3ae230d0"
+    },
+    {
+      "path": "tests/benchmarks/fake_robotwin_labtasker.py",
+      "size": 5358,
+      "sha256": "b5258fe40588793be872adb3219f3955b52903b23804bb61d335864724ef4bdc"
+    },
+    {
+      "path": "tests/benchmarks/test_ebench_bridge.py",
+      "size": 12962,
+      "sha256": "1276b0acf622e20bd5f27715bc6743a385a512a3289ef3473ee444c6742ece8d"
+    },
+    {
+      "path": "tests/benchmarks/test_eval_manifest.py",
+      "size": 8335,
+      "sha256": "d7e1f74912149a34925401ccb5cf9fff4213007e7871b3663d8afeee73138707"
+    },
+    {
+      "path": "tests/benchmarks/test_eval_workflow_assets.py",
+      "size": 2752,
+      "sha256": "0662927c2209e5f0d6401482ae34c2743ee60e162768844e3b73ca8abc6a0bb3"
+    },
+    {
+      "path": "tests/benchmarks/test_labtasker_resources.py",
+      "size": 2042,
+      "sha256": "d20b68f70910bd8857f758654ca9fa7c930c3bae3cc73b1a6fbb982c33ad35bb"
+    },
+    {
+      "path": "tests/benchmarks/test_libero_bridge.py",
+      "size": 3816,
+      "sha256": "a2865e9a7b752c714eb80943eb17bf711e75d5e86b64fb7711676830fcd42617"
+    },
+    {
+      "path": "tests/benchmarks/test_libero_labtasker.py",
+      "size": 29347,
+      "sha256": "115806a8b64ae6087713bace60ee89a2ca64243f6200641eaa5b221648f765ae"
+    },
+    {
+      "path": "tests/benchmarks/test_libero_scheduler.py",
+      "size": 5452,
+      "sha256": "a92976bd7673fbd6d2bcc0e40c608b894147f00e23bb5da233bfdac8012798a6"
+    },
+    {
+      "path": "tests/benchmarks/test_libero_single_eval.py",
+      "size": 4328,
+      "sha256": "1916b68c72706bd43c6148de63c53c000180ef67a942d50200ece0645cc7f870"
+    },
+    {
+      "path": "tests/benchmarks/test_robotwin_labtasker.py",
+      "size": 10837,
+      "sha256": "135eca227a86d42c18bf60dee9ebca1a9bd53a70673deb647703d1e91baf3a80"
+    },
+    {
+      "path": "tests/benchmarks/test_task_policy.py",
+      "size": 8823,
+      "sha256": "98e23c471685a0982d0ff8d23633fa1aecd1b47d656ce7d0d30467de36141219"
+    },
+    {
+      "path": "tests/benchmarks/test_vlabench_bridge.py",
+      "size": 10686,
+      "sha256": "76d1bf56a617ecc73e43606f9abf02bb2a92759de808a865973972d70f7e9009"
+    },
+    {
+      "path": "tests/conftest.py",
+      "size": 1736,
+      "sha256": "47c1e63149c40fff0e824272d2abc41035f6ee0ef2c210cdca4a0d16dd725255"
+    },
+    {
+      "path": "tests/dataloader/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "tests/dataloader/conftest.py",
+      "size": 4147,
+      "sha256": "644af032f35e6e1a1a001c2050a4b9e48212a650015028d59ceb853e0302593a"
+    },
+    {
+      "path": "tests/dataloader/test_2d_mask_migration.py",
+      "size": 6689,
+      "sha256": "8154415fc36d21e66b71c0b830ce07589ef7bd552bdf7e97a5419c44a2c5ae66"
+    },
+    {
+      "path": "tests/dataloader/test_agibotworld.py",
+      "size": 28864,
+      "sha256": "01406ae03808fb6ae2b0e6a03b2ffb4a6867edd2c2c6ca6a20b688d40b12efd7"
+    },
+    {
+      "path": "tests/dataloader/test_ebench_action_space.py",
+      "size": 1513,
+      "sha256": "2ca3c5ae20f07501b50061314c53454b12bf55c3b6a328ec807dfa402ddfd437"
+    },
+    {
+      "path": "tests/dataloader/test_ebench_dataset.py",
+      "size": 25634,
+      "sha256": "3b2affcb90ac2cf247beb07cce97e0629a8995060cc1d35b878b630a671289e1"
+    },
+    {
+      "path": "tests/dataloader/test_ebench_stats_computation.py",
+      "size": 12955,
+      "sha256": "c1f4a4d13f8133436b00412e9a23541e4603350d678d40e6b82e0345793f1b06"
+    },
+    {
+      "path": "tests/dataloader/test_eef_utils.py",
+      "size": 8220,
+      "sha256": "630803a84d839558f6b472bd299ea3ded915106529af425a5c920af9b94e782f"
+    },
+    {
+      "path": "tests/dataloader/test_exclusion_io.py",
+      "size": 3615,
+      "sha256": "e5ce56fedb5d8ea88abf9fd3afa949c42122e1a3f97ee95bcc584b30426be033"
+    },
+    {
+      "path": "tests/dataloader/test_gr1_kinematics.py",
+      "size": 3789,
+      "sha256": "5f423288251e092aabf84d6d918f19bf1fcacfe8b4695d52a9dccc4b3bd5a406"
+    },
+    {
+      "path": "tests/dataloader/test_interndata_a1.py",
+      "size": 73871,
+      "sha256": "bca807af719d0c5063fb8b1b790a30d757a744c6392412fbebd1ca512ac01254"
+    },
+    {
+      "path": "tests/dataloader/test_interndata_a1_stats_computation.py",
+      "size": 45162,
+      "sha256": "0f30334f713a346128f5f37e787a3b012f0646e52dc417c22319fa4894be74f9"
+    },
+    {
+      "path": "tests/dataloader/test_lerobotv3_utils.py",
+      "size": 13580,
+      "sha256": "34a404f66a99af3fd893ea04eb39b214c06ac9970d00b6891ec3980ca6e00e10"
+    },
+    {
+      "path": "tests/dataloader/test_libero.py",
+      "size": 5328,
+      "sha256": "6757c351d762f09d44389e797318a6b0f109f5d57876f0d83a76d68356a71073"
+    },
+    {
+      "path": "tests/dataloader/test_mixture.py",
+      "size": 8404,
+      "sha256": "4acf533eca92ac330a99479af025cffbc5ca62e0fdd293b9f63ed388dfcf2d9a"
+    },
+    {
+      "path": "tests/dataloader/test_mixture_from_config.py",
+      "size": 8861,
+      "sha256": "1b4f544bb508f85e9e632da1800b97fd60dc04b9472c6ec0330eef50ecd4dd3b"
+    },
+    {
+      "path": "tests/dataloader/test_mixture_trainer_dataloader.py",
+      "size": 1193,
+      "sha256": "e5da1ce36ac6363371eead6d115ea942e3ef3710fbf48aa993ced7d2798bd77a"
+    },
+    {
+      "path": "tests/dataloader/test_muka_franka.py",
+      "size": 9678,
+      "sha256": "df29fae350db9607c70e5ccfb3374f1327a1ec1a4c7e8ff41e7a79bad0e22a0b"
+    },
+    {
+      "path": "tests/dataloader/test_multi_lerobot.py",
+      "size": 2456,
+      "sha256": "a8626abd85b60ebbdec583a9ed9e97af4904e0fe8dcaa367e24a7f5c8bca86b8"
+    },
+    {
+      "path": "tests/dataloader/test_normalization_utils.py",
+      "size": 5622,
+      "sha256": "6e4a88ac0a0ba088fc1191784b28031c0d57729ce23720161fd867ae4dd6fd98"
+    },
+    {
+      "path": "tests/dataloader/test_oxe_mixture_integration.py",
+      "size": 4426,
+      "sha256": "e64e8c755cf93c5f77cdda57e784b0f839463eacce8e5d7f9252e6428175cdd1"
+    },
+    {
+      "path": "tests/dataloader/test_oxe_schema.py",
+      "size": 6092,
+      "sha256": "51925e77e09178f55d2e07ee89409c466c6ced471940ac495699ac48a01b6c49"
+    },
+    {
+      "path": "tests/dataloader/test_oxe_stats_computation.py",
+      "size": 13511,
+      "sha256": "79fff9176266096e7edacbfeb18027e528bd297993793b920116838c12af3bfd"
+    },
+    {
+      "path": "tests/dataloader/test_robocasa365.py",
+      "size": 9032,
+      "sha256": "53afac2d824fedf775e6212ff55ed4849fb073ed7f0dbaa6ff504ba4cbd7b973"
+    },
+    {
+      "path": "tests/dataloader/test_robocasa_gr1.py",
+      "size": 28582,
+      "sha256": "6206db05bc1c0c6b1a83e73d9fa27bee94ad502f2aac75d37fa6e4a0ed8580ca"
+    },
+    {
+      "path": "tests/dataloader/test_robocoin_cameras.py",
+      "size": 2674,
+      "sha256": "6160fb662bbd3d44763ea5536a89a9e7bdee238ae44eddecdc106bd5fe04299e"
+    },
+    {
+      "path": "tests/dataloader/test_robocoin_compute_stats.py",
+      "size": 30546,
+      "sha256": "120eb048e0ae2caf061d6d491f78a7102f646e75cb171737a5ca7f95d07ae33f"
+    },
+    {
+      "path": "tests/dataloader/test_robocoin_normalize.py",
+      "size": 5042,
+      "sha256": "d78a3af26d80a46deb1925e1c71384957284ad4b8b28e816b6f494d3f8cd7ce7"
+    },
+    {
+      "path": "tests/dataloader/test_robocoin_trim.py",
+      "size": 25191,
+      "sha256": "e2127ee6093a721168e17545d6cd9ce31346f43e89a2996792c637398e8a0f6f"
+    },
+    {
+      "path": "tests/dataloader/test_unify_action.py",
+      "size": 5073,
+      "sha256": "705127f1424da0003d5c4185bec22e2b7eab9e4b444631a7e5c2d813ebf5a7e1"
+    },
+    {
+      "path": "tests/dataloader/test_vlabench_dataset.py",
+      "size": 14013,
+      "sha256": "2f594225f42c56f08ffb5c4f9854d9430c354e979d6b588165a26f45a256f7ac"
+    },
+    {
+      "path": "tests/dataloader/test_vlabench_offsets.py",
+      "size": 6923,
+      "sha256": "31bea091d3a1aaceb53da318e088cdc1dd1465b95db572414420617a6a1fd1b2"
+    },
+    {
+      "path": "tests/docker/test_docker_integration.py",
+      "size": 45523,
+      "sha256": "3776a6ab81d49dc11daf4c5664d668fff46a16ce3d07d7b9b952ba8eb57b8896"
+    },
+    {
+      "path": "tests/docker/test_docker_tools.py",
+      "size": 19890,
+      "sha256": "82173a6cc27832ffd76ec2941aebd5790589adae1d70ca61b90d228d94f6f375"
+    },
+    {
+      "path": "tests/model/__init__.py",
+      "size": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "tests/model/test_2d_action_mask.py",
+      "size": 9119,
+      "sha256": "50ebc9062311f1ce6056b2391f25587d2482ca0bc7fb19649dcab528baa6f9d2"
+    },
+    {
+      "path": "tests/model/test_compute_action_loss.py",
+      "size": 6091,
+      "sha256": "80adabe1de0af818fd839526c229bf03f97112a4bf52c89ae1102d4be6a846d7"
+    },
+    {
+      "path": "tests/test_action_backbone_smoke.py",
+      "size": 15043,
+      "sha256": "a5d54550a5037b926cb067f281d2e0d4664dd1340323e71b0ffc228f98362ee1"
+    },
+    {
+      "path": "tests/test_action_normalization.py",
+      "size": 29228,
+      "sha256": "798f7ffbf340819d0dddb024f5c0054214bb36d4f34694ee6ee8d57bf327d238"
+    },
+    {
+      "path": "tests/test_architecture_smoke.py",
+      "size": 7133,
+      "sha256": "c1c585980bbcae6124728c85664df8f1a71b5a71585071553ba43253b11e6ee7"
+    },
+    {
+      "path": "tests/test_architecture_variants.py",
+      "size": 35754,
+      "sha256": "060be44a85d354ee9e507adb4cb311baf76817cf604b7b06d6dc77e94394af95"
+    },
+    {
+      "path": "tests/test_async_executor.py",
+      "size": 12865,
+      "sha256": "328eed6b83824981865cbb39143b237a39070a64d7f00fffb4ed13a985487a6a"
+    },
+    {
+      "path": "tests/test_attention_backend_dispatch.py",
+      "size": 13144,
+      "sha256": "d28f0ee364b271479bdd9dd659c191fe4e74f983ec5427490be3e5a73e5e9404"
+    },
+    {
+      "path": "tests/test_attention_env_override.py",
+      "size": 4220,
+      "sha256": "e0d3320b223d2e0e23982c23b48ce110216f5b686e8644b0e67a32fabb807251"
+    },
+    {
+      "path": "tests/test_backbone_metadata.py",
+      "size": 1744,
+      "sha256": "6f395895b7d286b1dbc5303352ea221ca50c60312f19f3a804d4e1c08cf5a40a"
+    },
+    {
+      "path": "tests/test_cache_behavior.py",
+      "size": 10978,
+      "sha256": "5e3b56ae6c4d60b941e5ae067e8bab9e95a128d53c461661ba57c0fb0a4accff"
+    },
+    {
+      "path": "tests/test_checkpointing.py",
+      "size": 10920,
+      "sha256": "8d600240edc67da4befc89e7daffcc2411d669199d38a72aec7a7a92dcf09fb5"
+    },
+    {
+      "path": "tests/test_cosmos3_api_hygiene.py",
+      "size": 2848,
+      "sha256": "6d649d07de460f1976bbe8cad979260546042adbae2d2e14412d684b72807bc1"
+    },
+    {
+      "path": "tests/test_cosmos3_block_loop_parity.py",
+      "size": 17654,
+      "sha256": "7a8db55536dce4dc0c6e69f920b2db0ee6e27fe8043d158dce7543c892700aa7"
+    },
+    {
+      "path": "tests/test_cosmos3_compile.py",
+      "size": 10262,
+      "sha256": "7e9e3b7ba30750bd641b95dde3c9c74bf8cd22d1d9e8654add2af2ffd44a244a"
+    },
+    {
+      "path": "tests/test_cosmos3_deploy_artifacts.py",
+      "size": 3473,
+      "sha256": "328d24ef7929689719a54971d43ae32a15d341214804493c975aa3ad2558c7e8"
+    },
+    {
+      "path": "tests/test_cosmos3_idm.py",
+      "size": 14751,
+      "sha256": "d56cd028f0dd3e7a848ec3f75b348a3f6d5c2bb7c79f971f3028551e77e18df9"
+    },
+    {
+      "path": "tests/test_cosmos3_joint_self_attn.py",
+      "size": 13877,
+      "sha256": "ec82e0ede744fb9f5fe2b088d9957baca0d48e6334bb1c08e9f7d3220457f071"
+    },
+    {
+      "path": "tests/test_cosmos3_real_load.py",
+      "size": 3226,
+      "sha256": "c27db5c1dbd88e260f11c96be78d54ebf66b925113ff22761d85c67f2f6a1429"
+    },
+    {
+      "path": "tests/test_cosmos3_registry.py",
+      "size": 9974,
+      "sha256": "8095e327762def3b26b94709f1007e50c4ecd2176c9c0f7329cda7f5d31cf180"
+    },
+    {
+      "path": "tests/test_cosmos3_scheduler.py",
+      "size": 1424,
+      "sha256": "08f64f6651ed816964236feda8a88d1be40efa9e6029792ca4a1d6ed63de3cfc"
+    },
+    {
+      "path": "tests/test_cosmos3_single_system.py",
+      "size": 7572,
+      "sha256": "3c8752267701a50b5c6b55064a5156b2762802e6c80aa51faa57a60993f4ddf5"
+    },
+    {
+      "path": "tests/test_cosmos3_text_pack.py",
+      "size": 6237,
+      "sha256": "cec4441ba79343c52f2c685f7fdfa7864d670bc6d076d682d31ab877c1dcbd4a"
+    },
+    {
+      "path": "tests/test_cosmos_predict25_adapter.py",
+      "size": 4584,
+      "sha256": "1248c63fbf7e78a5165329502175212b615704ddf2d6742216ee1b67618d3701"
+    },
+    {
+      "path": "tests/test_cosmos_predict25_api_hygiene.py",
+      "size": 2485,
+      "sha256": "b80dd0b0dfaadf01332e50022d2e2ff4ec1d65d574efbdc87a5e711269a20c6e"
+    },
+    {
+      "path": "tests/test_cosmos_predict25_cfg_inference.py",
+      "size": 22754,
+      "sha256": "f022ed79c4577397e956e057cc3d64af2c15cc79389c21c90c4690287ce08299"
+    },
+    {
+      "path": "tests/test_cosmos_predict25_checkpoint_bridge.py",
+      "size": 4291,
+      "sha256": "1f8e168bad7e139cec316237032b84ba9abe8aa48c13ac6e158d3e76d5410dfe"
+    },
+    {
+      "path": "tests/test_cosmos_predict25_deploy_artifacts.py",
+      "size": 20771,
+      "sha256": "cc95174882cafd35292fc300a31a69c45e080c3a8a988cf21e15fedafba5d61d"
+    },
+    {
+      "path": "tests/test_cosmos_predict25_gradient_checkpointing.py",
+      "size": 2839,
+      "sha256": "27e73887a2c77c16281bdacc11ed00b4c2f070fe5e9f6adb9ae73aad6d12a6d9"
+    },
+    {
+      "path": "tests/test_cosmos_predict25_idm.py",
+      "size": 11422,
+      "sha256": "d6b076851bc293cc365dd3af18c452d4f43f323c660ad24a32d2b0057f5b0e57"
+    },
+    {
+      "path": "tests/test_cosmos_predict25_joint_cross_attn.py",
+      "size": 10951,
+      "sha256": "472bbe096f2b2f59a9867a766c47708826873952a7a373fee72587542171927f"
+    },
+    {
+      "path": "tests/test_cosmos_predict25_joint_self_attn.py",
+      "size": 29173,
+      "sha256": "1214b7f1ca8d92e07d5ff7cb58e150e30efd8e61a395ff9ac7e126f67089738b"
+    },
+    {
+      "path": "tests/test_cosmos_predict25_pipeline_wrapper.py",
+      "size": 26087,
+      "sha256": "b27f0a88418cfde5462cc7117210150449cc8b22b59861e2f9d065ef1b960b50"
+    },
+    {
+      "path": "tests/test_cosmos_predict25_real_inference.py",
+      "size": 3478,
+      "sha256": "c47172adafd708965c3db5bd8c2ce6ca6f177a544adec36d16e6346b3af8d6aa"
+    },
+    {
+      "path": "tests/test_cosmos_predict25_real_load.py",
+      "size": 6540,
+      "sha256": "388991ab75d48d820130dfe03432af93e876413b9c4d0631f0d9effab0dee90a"
+    },
+    {
+      "path": "tests/test_cosmos_predict25_registry.py",
+      "size": 4465,
+      "sha256": "16323b0052293536656cac4cb98e1a69809d51d40fb750c09e9b3c2ac032174e"
+    },
+    {
+      "path": "tests/test_cosmos_predict25_scheduler.py",
+      "size": 2891,
+      "sha256": "e2bdeb47b382ff84f2e7b48e898bddcc6ecf3b97ed9c0328e4d34bd05479da53"
+    },
+    {
+      "path": "tests/test_cosmos_predict25_single_system.py",
+      "size": 12516,
+      "sha256": "83382d2f289d690f4c4dce920a4d9217f5cdbcbae40c2eb148124324f18d7a3f"
+    },
+    {
+      "path": "tests/test_cosmos_predict25_tri_system.py",
+      "size": 12865,
+      "sha256": "9b4e8f2ff887c13c4bdee437bee53674a4a4443230bbe75c13c8b4dd404ff1ee"
+    },
+    {
+      "path": "tests/test_cosmos_predict25_vae_config_flow.py",
+      "size": 2517,
+      "sha256": "ab61d2dc7f8854d5212dc964b1078126cee97ff6ec52b7b9d5cb4857381e437b"
+    },
+    {
+      "path": "tests/test_cosmos_predict25_vae_freeze_and_dtype_plumbing.py",
+      "size": 4590,
+      "sha256": "bbc67affdef9f4aec6385c85c2e6ff5a93fa9d697eb1f62e9900516b6fefa64d"
+    },
+    {
+      "path": "tests/test_dataloader_seed.py",
+      "size": 18262,
+      "sha256": "86fe0f2f9e9fe6ecfb20ee334568a588c100b0c0d6acf91c7f3e6b9e953cbb5d"
+    },
+    {
+      "path": "tests/test_dataset_interface.py",
+      "size": 1435,
+      "sha256": "6957a4b408e925669c7901d3a917105025b2b2ca42eb016eacddaae82d8d43d9"
+    },
+    {
+      "path": "tests/test_deployment_changes.py",
+      "size": 36093,
+      "sha256": "13b03c49d28eaf1398243e184b26c53408cd617a71d0ac3376f48fc6388094a0"
+    },
+    {
+      "path": "tests/test_dinov3_encoder.py",
+      "size": 22052,
+      "sha256": "c85c2c886925b43f4f46457a65e26aad65b03e0182758efbe14a471652085cc0"
+    },
+    {
+      "path": "tests/test_dit_cache.py",
+      "size": 4206,
+      "sha256": "0cc73210c55afa44a5d16c22d6cac6a31a5015c50b5ba55b6acdc9bbd46fee36"
+    },
+    {
+      "path": "tests/test_dual_system_idm.py",
+      "size": 24322,
+      "sha256": "430b077e79565cd7576285dd42eafae8d325ebd87f929967c83479758b9b2dcd"
+    },
+    {
+      "path": "tests/test_e2e_smoke.py",
+      "size": 4882,
+      "sha256": "052c48487f9b9e17faa313524edbcbdcc57578de65aad64bb93f38007c0b1296"
+    },
+    {
+      "path": "tests/test_eval_image_transport.py",
+      "size": 3786,
+      "sha256": "011d281513db5eb8c4f368bd6c418786a3b370971aa0a3c4d8a4d11703a8b831"
+    },
+    {
+      "path": "tests/test_external_encoder.py",
+      "size": 115161,
+      "sha256": "8a7a9806b52b9084a87172e2734c617b36510ead754e1e78d96cacdda962df56"
+    },
+    {
+      "path": "tests/test_finetune_config_override.py",
+      "size": 13234,
+      "sha256": "23963289e1a771576459cdf025fa51e1d9f43691aacbe668bc2a41c81d578d8b"
+    },
+    {
+      "path": "tests/test_flow_match_loss.py",
+      "size": 3328,
+      "sha256": "ea0e5fe9d396e613d0437d660f52df58f71782e1b59893ea33ef79d3a4c762a6"
+    },
+    {
+      "path": "tests/test_flux2_vae_encoder.py",
+      "size": 13000,
+      "sha256": "1b2637ed9879a8884a3fc3eba1db0d44e661e75d8f87d1536c6b423d18417960"
+    },
+    {
+      "path": "tests/test_freeze_strategy.py",
+      "size": 2888,
+      "sha256": "cceedd0ea54769304bcff08515fb4f847109b67b5b99882d3f0f8ee95b696d87"
+    },
+    {
+      "path": "tests/test_hardcoded_params.py",
+      "size": 8670,
+      "sha256": "4a1ca426de9766fa564ea756ec1951974c7248616d365b240d113cf79baaa293"
+    },
+    {
+      "path": "tests/test_imports.py",
+      "size": 9006,
+      "sha256": "0980b65bd9f8b1c7b4b575f48d2ea8544e26a68b58e9712ec60325aa34e23cb8"
+    },
+    {
+      "path": "tests/test_mask_modes.py",
+      "size": 3528,
+      "sha256": "509f998579b98ae60074e2dd39a79158875440b67710b74ef9034ca4b78d2f7e"
+    },
+    {
+      "path": "tests/test_mot_driver.py",
+      "size": 24055,
+      "sha256": "c1466f660d8374c50bf88fedea55b2830c4f79270771b82d2dfca074a0e23d28"
+    },
+    {
+      "path": "tests/test_no_execution_plan.py",
+      "size": 3339,
+      "sha256": "95ba0e7e480042036522be808be501deeafc3661c877101861191cd8ad43f5dc"
+    },
+    {
+      "path": "tests/test_obs_preprocess.py",
+      "size": 8382,
+      "sha256": "e3b8bc8ec98f2035b2c835e3b0c906c0363a3f8cffd9e1b9bb69f68cf1bb16f5"
+    },
+    {
+      "path": "tests/test_openwam_trainer.py",
+      "size": 24811,
+      "sha256": "abc69b9a02423bbaee6c1e58a6f7b31a10d5b31c43338ff3f37f54c5ce153dfd"
+    },
+    {
+      "path": "tests/test_optimizer_groups.py",
+      "size": 7373,
+      "sha256": "dc33f637ec64a93445f9a28617a7bd4f92688af642b0518bed43a013e74844dc"
+    },
+    {
+      "path": "tests/test_padding_masks.py",
+      "size": 16638,
+      "sha256": "a858e98ab741b0b36bad7589fd54765e7492f4e2ab40d0bd1dddc9dde9499d25"
+    },
+    {
+      "path": "tests/test_policy_binary_projection.py",
+      "size": 2894,
+      "sha256": "12824dc9ae9d26619b7ed7439438bdd1bdd5b47405a7783223f82e4fadfab81c"
+    },
+    {
+      "path": "tests/test_policy_server_cli.py",
+      "size": 9600,
+      "sha256": "d82ed2fca2b883fdb4e6b8d028f9959b21576c57a76c5403ff859b89436c1a6b"
+    },
+    {
+      "path": "tests/test_prepare_accelerate_unwrap.py",
+      "size": 4206,
+      "sha256": "ea0a64afc86bda547814022382dfd99c399923a87d00d695b15a3e100eef03d8"
+    },
+    {
+      "path": "tests/test_prepare_inputs_proprio_mask.py",
+      "size": 3799,
+      "sha256": "50d23fe1515633f17a16baefbfd6c0ee09ca9f4f6dbbc7b7a7a077fb6b1b0e09"
+    },
+    {
+      "path": "tests/test_proprio_mask_gating.py",
+      "size": 9116,
+      "sha256": "046430ef3a31b0f100143071447715c6317f38bc359138bf8f2842724fc91cfb"
+    },
+    {
+      "path": "tests/test_proprio_mask_mixture_collate.py",
+      "size": 6552,
+      "sha256": "b987ee2a7cb37661111ac69b7475a6191299a2be10c5f382bd0e42392eb79cf8"
+    },
+    {
+      "path": "tests/test_proprioceptive.py",
+      "size": 2983,
+      "sha256": "2968cf474475d30031cbb55eed4089cf370929a2bad194582e0bc479577ccdee"
+    },
+    {
+      "path": "tests/test_public_config_defaults.py",
+      "size": 549,
+      "sha256": "ba28005f10fe9972dcf038eb15c366518177276dac86048fdadf00f7db474539"
+    },
+    {
+      "path": "tests/test_reason1_text_encoder.py",
+      "size": 4799,
+      "sha256": "60792ef8bd701d3b4ec08276eb3e4e8fe36efab5bbbec351222c8bc876bcdb82"
+    },
+    {
+      "path": "tests/test_repr_contract.py",
+      "size": 3053,
+      "sha256": "666e6ab2fbc2c618f0a5d891c89464b8e4d6eba8105db6e3f2d764eca549a6fa"
+    },
+    {
+      "path": "tests/test_robocasa365_config.py",
+      "size": 8629,
+      "sha256": "3e1b101334dd58a9344e00e636254db298c1d51973e4161aa14eeb0cd8e60f76"
+    },
+    {
+      "path": "tests/test_robocasa365_debug.py",
+      "size": 4654,
+      "sha256": "8bdc4c2da021eda83ebb51c6ab6a7cea4aa41320cc668532f1ce2c482e4099ef"
+    },
+    {
+      "path": "tests/test_robocasa365_interface.py",
+      "size": 3123,
+      "sha256": "4e58c65e5dd9aa09ae7fcc9cacf867cfb9d7afb16974940f41ff3548de558ab6"
+    },
+    {
+      "path": "tests/test_robodojo_contract.py",
+      "size": 10707,
+      "sha256": "7c24c256b2c13672f0f267908efc27837a1a09478c02e7e6d71cc3cad7baf8d0"
+    },
+    {
+      "path": "tests/test_robodojo_dataloader.py",
+      "size": 32061,
+      "sha256": "54da1a831c402ff34bbe51c7deefe57e87a28615f72018d4d0e94e9f1ad02a3a"
+    },
+    {
+      "path": "tests/test_robodojo_prepared.py",
+      "size": 6381,
+      "sha256": "3fe606c94c2ba7bad9a5b082d614d239357bbcb5d1dc1a81ca458c004f599214"
+    },
+    {
+      "path": "tests/test_robodojo_stats_computation.py",
+      "size": 10922,
+      "sha256": "26eac1681c8b3bf3a53cc82bb17ed057910e2690298e86b26d7c6bb17e4eac9c"
+    },
+    {
+      "path": "tests/test_robotwin_dataloader.py",
+      "size": 45044,
+      "sha256": "d8a1681fe6e2377c22714de2f0f4a419882bd527b2c1fe30a5384fd94a5a29db"
+    },
+    {
+      "path": "tests/test_robotwin_interface_proprio.py",
+      "size": 8052,
+      "sha256": "d2ac0f2431940b876f4b3ffaae79e5c5519a15516f942204f98912e0f560a836"
+    },
+    {
+      "path": "tests/test_save_deploy_assets_hook.py",
+      "size": 2075,
+      "sha256": "6ac96926ce100f148a867196cd30bbf074c2f6426dc8a63b5450847104175871"
+    },
+    {
+      "path": "tests/test_schedule_equivalence.py",
+      "size": 9035,
+      "sha256": "ba8b9012eece6c7886e0c7b751ef48b18a89059efcdbc1d99f4f446fe2ff3711"
+    },
+    {
+      "path": "tests/test_seeding.py",
+      "size": 2850,
+      "sha256": "49fd45d62a91497120500de52446fccd0c2d225c65d09a79b1526ec8d4f9584e"
+    },
+    {
+      "path": "tests/test_shift_video_alignment.py",
+      "size": 9997,
+      "sha256": "afd3061be2e48cc8ba95416eb0548d1fd01668381e8ca2a76e691a31ad20a5f0"
+    },
+    {
+      "path": "tests/test_single_system_attention_mask.py",
+      "size": 17342,
+      "sha256": "9d7894dff6d19cee6b583548b2ccf3ac5ce176f03dc560c1eb355f90a791c89f"
+    },
+    {
+      "path": "tests/test_single_system_decoupled.py",
+      "size": 10892,
+      "sha256": "5e802b49fdc8c8bc96f0e6c78944a5718e1f0ea3b773b63258b629d550eef016"
+    },
+    {
+      "path": "tests/test_split_attn_equivalence.py",
+      "size": 10529,
+      "sha256": "3ecc0d742088b7a60e64f7cc1e272e7883140a1b4e5022a9d5e63c5d8c1972e1"
+    },
+    {
+      "path": "tests/test_step_limits_loader.py",
+      "size": 5961,
+      "sha256": "8efb70cd4ddf2c91ff6376fabd09acca54f4f766845f8cbd5323cbfa49c5d3b3"
+    },
+    {
+      "path": "tests/test_svae.py",
+      "size": 6128,
+      "sha256": "13384dc464f7014b9ea3fa463dc55a395c7cfcd710456888fb4d9fc3b09a913d"
+    },
+    {
+      "path": "tests/test_temporal_compression_plumbing.py",
+      "size": 5026,
+      "sha256": "5f5e01e2572af113d997b824648b433794f24cbc36473e138c740e8cb7598a56"
+    },
+    {
+      "path": "tests/test_train_deploy_consistency.py",
+      "size": 21542,
+      "sha256": "32020f784ea0b1360b09b6e30e505f1f68ece6e836a7c39fe1ab7cf1771f5528"
+    },
+    {
+      "path": "tests/test_training_utils.py",
+      "size": 3958,
+      "sha256": "c81fcd10735c4bba45ce1a54f82c2b93160fd019fd5e0465fa04230a7087ee78"
+    },
+    {
+      "path": "tests/test_transport_client.py",
+      "size": 5493,
+      "sha256": "36fdc661b6e81a51b74942679e7ec6ea960055f7baf5da41ae63d5592980ec95"
+    },
+    {
+      "path": "tests/test_tri_system_smoke.py",
+      "size": 54397,
+      "sha256": "097593ec9b60a2f4a5edd28e3703ddf2daebdd0271aa56868b085b0d3848936d"
+    },
+    {
+      "path": "tests/test_vace_native_input_path.py",
+      "size": 14661,
+      "sha256": "766a5e7beecd15771aab37d07c9e12663682f4be94e53f6a3a8ff284d9b2b131"
+    },
+    {
+      "path": "tests/test_vav_architecture.py",
+      "size": 4768,
+      "sha256": "460f3d42f4525724524eb642a20134ee162f62000277f21925bbe55a9543fd9d"
+    },
+    {
+      "path": "tests/test_vav_attention.py",
+      "size": 4695,
+      "sha256": "deefd67ab1e523f99d82c9edce41d13d01b8f289d232cf592dfc5dc1fafb426b"
+    },
+    {
+      "path": "tests/test_vav_driver.py",
+      "size": 4148,
+      "sha256": "ddca2adb26ee861fb0850f2303ef30758f4342d16f1027ddc14355a2aae9b60f"
+    },
+    {
+      "path": "tests/test_vav_retention.py",
+      "size": 1314,
+      "sha256": "94fbcb1aa8fd3f121d971436b704ccffd121ed51d747043076c1384331d3ecd4"
+    },
+    {
+      "path": "tests/test_vav_robot_rgb.py",
+      "size": 4172,
+      "sha256": "508f80e944c2e56337632345649e778ebad8c66524464041f2c1fefbe8be4111"
+    },
+    {
+      "path": "tests/test_video_backbone_consistency.py",
+      "size": 7075,
+      "sha256": "ff8468f925556c145893673ce71a6a935fa7a793a13278af623169827ec1bbad"
+    },
+    {
+      "path": "tests/test_video_backbone_dit_patch_size_dispatch.py",
+      "size": 6022,
+      "sha256": "ee425b355ea1bf72fccbe6da99fda6ab5d1a263932bcb391995337e6d22143fd"
+    },
+    {
+      "path": "tests/test_video_backbone_from_scratch.py",
+      "size": 19891,
+      "sha256": "2de591881e189b6108588a4cd05ea2b0eaebe175b6b072be61ec2f028748992c"
+    },
+    {
+      "path": "tests/test_video_backbone_smoke.py",
+      "size": 13799,
+      "sha256": "ae82f11125457f1281b9b570707c0e9b2de91fd1ddf0ea94cc336c28fd83bad7"
+    },
+    {
+      "path": "tests/test_vjepa_svae.py",
+      "size": 6358,
+      "sha256": "62dd6f3f3be3ceef0d9e60ab24c66bf5a83f5646f800902203a7f329f5398931"
+    },
+    {
+      "path": "tests/test_wam_architecture.py",
+      "size": 66934,
+      "sha256": "69e077d0308647eb1ccf1cddbe4b2c78fd4b35b5787684263a3458314f27cee9"
+    },
+    {
+      "path": "tests/test_wan_pipeline_shape_checker.py",
+      "size": 4473,
+      "sha256": "70821405215fadae3d69c2721034d4472a5347e68d670b5f82325fc46b9d0daa"
+    },
+    {
+      "path": "tests/test_wan_registry_smoke.py",
+      "size": 640,
+      "sha256": "8dd4fb10a137eb36a9cb087e3b0ab7d750edf9a1780074d93f3b232fcfd2c316"
+    }
+  ]
+}

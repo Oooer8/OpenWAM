@@ -1,0 +1,28 @@
+defaults:
+  - train
+  - override dataloader: cosmos3_droid
+  - _self_
+
+training:
+  # Domain adaptation from alpha, two passes as requested.
+  num_epochs: 2
+  max_steps: null
+  batch_size: 16
+  gradient_accumulation_steps: 1  # 8 GPUs * 16 clips = 128 global batch
+  learning_rate: 1e-4
+  mixed_precision: bf16
+  zero_stage: 2
+  use_gradient_checkpointing: true
+  initialize_model_on_cpu: true
+  finetune_ckpt_path: /mnt/vepfs01/output/tiecheng.guo/openwam/assets/openwam_ckpt/openwam_alpha/OpenWAM-Alpha-Pretrain-Foundation-Model
+  resume_ckpt_path: null
+  output_path: /mnt/vepfs01/output/tiecheng.guo/openwam/outputs/cosmos3_droid_alpha
+  save_steps: 1000  # Micro-steps and optimizer updates now coincide.
+  save_full_states_for_resume: true
+  keep_last_k_ckpts: 2
+  dataset_num_workers: 6
+
+project:
+  name: cosmos3_droid_alpha
+  wandb:
+    project: null

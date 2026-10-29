@@ -1,0 +1,16 @@
+defaults:
+- train_robodojo_prepared
+- _self_
+dataloader:
+  latent_cache_dir: /mnt/vepfs01/output/tiecheng.guo/RoboDojo_openwam_vae_cache_v1
+  color_jitter:
+    enabled: false
+training:
+  batch_size: 16
+  gradient_accumulation_steps: 1
+  dataset_num_workers: 4
+  use_gradient_checkpointing: true
+  output_path: /mnt/vepfs01/output/tiecheng.guo/openwam/outputs/robodojo_alpha_cached_b16
+project:
+  wandb:
+    run_name: robodojo_alpha_cached_b16

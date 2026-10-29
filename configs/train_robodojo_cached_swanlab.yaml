@@ -1,0 +1,11 @@
+defaults:
+- train_robodojo_cached
+- _self_
+training:
+  keep_last_k_ckpts: 3
+  save_full_states_for_resume: true
+  output_path: /mnt/vepfs01/output/tiecheng.guo/robodojo_runs/20261021_8x16_gc6/training
+project:
+  name: openwam-robodojo
+  wandb:
+    run_name: robodojo_alpha_cached_8x16_gc6_20261021
